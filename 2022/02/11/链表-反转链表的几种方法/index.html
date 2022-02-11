@@ -15,14 +15,36 @@
 <meta property="og:site_name" content="Ras-Hammel">
 <meta property="og:description" content="数据结构链表之反转链表的几种方法">
 <meta property="og:locale">
-<meta property="og:image" content="http://example.com/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.png">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.png">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C.png">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%801.png">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%802.png">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%803.png">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%BA%8C1.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%BA%8C2.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%BA%8C3.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%BA%8C4.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%891.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%892.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%893.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%894.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%895.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C.png">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B1.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B2.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B3.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B4.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B5.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B6.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B7.jpg">
+<meta property="og:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B8.jpg">
 <meta property="article:published_time" content="2022-02-11T07:08:22.000Z">
-<meta property="article:modified_time" content="2022-02-11T07:49:09.757Z">
+<meta property="article:modified_time" content="2022-02-11T16:43:16.844Z">
 <meta property="article:author" content="Ras-Hammel">
 <meta property="article:tag" content="c++">
 <meta property="article:tag" content="链表">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.png">
+<meta name="twitter:image" content="http://example.com/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.png">
   
     <link rel="alternative" href="/atom.xml" title="Ras-Hammel" type="application/atom+xml">
   
@@ -189,7 +211,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">1.5k字</span>
       </span>
     </span>
 
@@ -198,7 +220,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
+        <span class="post-count">5分</span>
       </span>
     </span>
 </div>
@@ -208,9 +230,140 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><img src="/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.png" alt="图1 反转链表"></p>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><div style="width:50%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.png" class title="图1反转链表的示例"></div>
+
+<p>本节仅以无头节点的链表为例，讲解实现链表反转的 4 种方法。<br>头结点插入、就地翻转、迭代翻转、递归</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">ListNode</span> &#123;</span><br><span class="line">    <span class="type">int</span> val;</span><br><span class="line">    ListNode *next;</span><br><span class="line">    <span class="built_in">ListNode</span>(<span class="type">int</span> x) : <span class="built_in">val</span>(x), <span class="built_in">next</span>(<span class="literal">NULL</span>) &#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-<h3 id="就地置换"><a href="#就地置换" class="headerlink" title="就地置换"></a>就地置换</h3><h3 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h3><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3>
+<p>对于有头节点的链表反转：</p>
+<li>使用头插法或者就地逆置法实现时，仅需将要插入的节点插入到头节点和首元节点之间即可；</li>
+<li>使用迭代反转法实现时，初始状态忽略头节点（直接将 mid 指向首元节点），仅需在最后一步将头节点的 next 改为和 mid 同向即可；</li>
+<li>递归法并不适用反转有头结点的链表（但并非不能实现），该方法更适用于反转无头结点的链表。</li>
+
+
+<h3 id="头节点插入法"><a href="#头节点插入法" class="headerlink" title="头节点插入法"></a>头节点插入法</h3><p style="color: #CD2626;">从链表的头结点开始遍历，将每个结点摘下，然后连接到新链表中。最后的新链表就是翻转的链表</p>
+
+<p style="color: #008B00;">准备工作</p>
+<ul>
+<li>新增指针p，用于遍历链表（维护原有头指针L，避免滥用）</li>
+<li>新增指针temp，始终指向p结点的下一个结点，充当原链表断链后的新头指针</li>
+</ul>
+<div style="width:50%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C.png" class title="图2准备工作"></div>
+
+<p style="color: #008B00;">具体步骤</p>
+由于头结点之前没有结点，改变指向后将它指向NULL。（头结点变为最后一个结点，即L->next=NULL）
+<ol>
+<li>令temp指向p的下一个结点：temp=p->next</li>
+<li>翻转当前结点。将当前结点p移动到新链表NL的头部，成为新头结点：p.next=NL</li>
+<li>重置头指针NL。将指针NL指向当前新头结点，即p：NL=p</li>
+<li>p移动到temp，即准备将下一个结点移到新链表中：p=temp。<a style="color: #CD2626;">需要注意的是，第四步必须在第一步的后面，不然会使得temp指向null</a></li>
+</ol>
+翻转结点1
+<div style="width:40%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%801.png" class></div>
+翻转结点2
+<div style="width:40%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%802.png" class></div>
+翻转结点3
+<div style="width:40%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%803.png" class></div>
+最后NL指针指向的链表即为翻转后的新链表。
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* L)</span></span>&#123;</span><br><span class="line">    ListNode* p=L;</span><br><span class="line">    ListNode* NL=<span class="literal">NULL</span>;</span><br><span class="line">    ListNode* temp;</span><br><span class="line">    <span class="keyword">if</span>(<span class="literal">NULL</span>==head||<span class="literal">NULL</span>==head-&gt;next)&#123;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">while</span>(p)&#123;</span><br><span class="line">            temp=p-&gt;next;   <span class="comment">//指向下一个结点  </span></span><br><span class="line">            p-&gt;next=NL; <span class="comment">//翻转当前结点</span></span><br><span class="line">            NL=p;   <span class="comment">//重置NL指针</span></span><br><span class="line">            p=temp; <span class="comment">//准备下一轮</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;            </span><br><span class="line">    <span class="keyword">return</span> NL;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="就地翻转法"><a href="#就地翻转法" class="headerlink" title="就地翻转法"></a>就地翻转法</h3><p>与头结点插入法思想类似。不同的是，<a style="color: #CD2626;">不额外新建链表，而直接原地翻转。</a></p>
+<p style="color: #008B00;">准备工作</p>
+<ul>
+<li>新增指针beg，指向第一个结点。在这个过程中beg->next指向下一轮需要翻转的结点。</li>
+<li>新增指针end，指向下一轮需要翻转的结点</li>
+</ul>
+
+<p style="color: #008B00;">具体步骤</p>
+需要翻转的结点不断插入到链表头部，而原先的第一个结点指向下一轮需要翻转的结点
+<ol>
+<li>摘除结点end。beg->next=end->next</li>
+<li>将结点end移动到链表头部。end->next=L</li>
+<li>重置头指针。L=end</li>
+<li>重置end指针，指向下一轮结点。end=beg->next</li>
+</ol>
+
+<p>原链表</p>
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%BA%8C1.jpg" class></div>
+翻转结点2
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%BA%8C2.jpg" class></div>
+翻转结点3
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%BA%8C3.jpg" class></div>
+翻转结点4
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%BA%8C4.jpg" class></div>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* head)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="literal">NULL</span>==head||<span class="literal">NULL</span>==head-&gt;next)&#123;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        ListNode* beg=head;</span><br><span class="line">        ListNode* end=head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(head)&#123;</span><br><span class="line">            beg-&gt;next=end-&gt;next;    <span class="comment">//摘除结点</span></span><br><span class="line">            end-&gt;next=head; <span class="comment">//移到链表头部</span></span><br><span class="line">            head=end;   <span class="comment">//重新指向头指针</span></span><br><span class="line">            end=beg-&gt;next;  <span class="comment">//下一轮</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;            </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="迭代翻转法"><a href="#迭代翻转法" class="headerlink" title="迭代翻转法"></a>迭代翻转法</h3><p style="color: #CD2626;">从链表的头结点开始遍历，期间逐步改变每个结点的next，使其指向前一个结点</p>
+
+<p style="color: #008B00;">准备工作</p>
+<ul>
+<li>新增指针beg，指向当前需要改变next的结点</li>
+<li>新增指针mid，指向当前结点的下一个结点，避免beg->next修改后导致后面的结点丢失</li>
+<li>新增指针end，指向mid的下一个结点，给mid的后移作跳板</li>
+</ul>
+每一轮的遍历，现将mid前移（与beg同指向），修改需要翻转的结点指向之后，3个指针依次向后移动一个结点，直到mid指向最后一个结点（即end指向null）
+
+<p style="color: #008B00;">具体步骤</p>
+<ol>
+<li>翻转当前结点：mid->next=beg</li>
+<li>后移三个指针：beg=mid; mid=end; end=mid->next;</li>
+最后遍历结束，将head重新指向头结点，即head=mid
+</ol>
+
+<p>原链表</p>
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%891.jpg" class></div>
+翻转结点1
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%892.jpg" class></div>
+翻转结点2
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%893.jpg" class></div>
+翻转结点3
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%894.jpg" class></div>
+翻转结点4
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E4%B8%895.jpg" class></div>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* head)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="literal">NULL</span>==head||<span class="literal">NULL</span>==head-&gt;next)&#123;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        ListNode *beg=<span class="literal">NULL</span>;</span><br><span class="line">        ListNode *mid=head;</span><br><span class="line">        ListNode *end=head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">            <span class="comment">//翻转当前结点</span></span><br><span class="line">            mid-&gt;next=beg;  </span><br><span class="line">            <span class="keyword">if</span>(end==<span class="literal">NULL</span>)   <span class="keyword">break</span>;</span><br><span class="line">            <span class="comment">//后移三个结点</span></span><br><span class="line">            beg=mid;</span><br><span class="line">            mid=end;</span><br><span class="line">            end=mid-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//修改head头指针指向</span></span><br><span class="line">        head=mid;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;            </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p>与迭代翻转法思想相反，</p><p style="color: #CD2626;">从链表的尾结点开始向前遍历，过程中一次改变各结点的指向，使其指向前一个结点。</p><p></p>
+<p style="color: #008B00;">准备工作</p>
+<ul>
+<li>新增指针p，用于遍历链表（维护原有头指针L，避免滥用）</li>
+<li>新增指针temp，始终指向p结点的下一个结点，充当原链表断链后的新头指针</li>
+</ul>
+<div style="width:50%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C.png" class title="图2准备工作"></div>
+
+<p style="color: #008B00;">具体步骤</p>
+由于头结点之前没有结点，改变指向后将它指向NULL。（头结点变为最后一个结点，即L->next=NULL）
+<ol>
+<li>令temp指向p的下一个结点：temp=p->next</li>
+<li>翻转当前结点。将当前结点p移动到新链表NL的头部，成为新头结点：p.next=NL</li>
+<li>重置头指针NL。将指针NL指向当前新头结点，即p：NL=p</li>
+<li>p移动到temp，即准备将下一个结点移到新链表中：p=temp。<a style="color: #CD2626;">需要注意的是，第四步必须在第一步的后面，不然会使得temp指向null</a></li>
+</ol>
+
+<p>原链表</p>
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B1.jpg" class></div>
+翻转结点4
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B2.jpg" class></div>
+翻转结点3
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B3.jpg" class></div>
+翻转结点2
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B4.jpg" class></div>
+ 
+  
+
+<p style="color: #008B00;">从另一个角度了解递归：</p>
+第一层链表可以表示为：
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B5.jpg" class></div>
+当执行完reverse(head->next)：（last始终指向翻转后的链表的头部）
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B6.jpg" class></div>
+现在要处理结点1和结点2：
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B7.jpg" class></div>
+<div style="width:70%;margin:auto"><img src="/2022/02/11/%E9%93%BE%E8%A1%A8-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95%E5%9B%9B8.jpg" class></div>
+此时链表翻转完毕，头指针为last。
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* head)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(head==<span class="literal">NULL</span>||head-&gt;next==<span class="literal">NULL</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        ListNode* new_head=<span class="built_in">reverseList</span>(head-&gt;next);</span><br><span class="line">        head-&gt;next-&gt;next=head;</span><br><span class="line">        head-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        <span class="keyword">return</span> new_head;</span><br><span class="line">    &#125;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
