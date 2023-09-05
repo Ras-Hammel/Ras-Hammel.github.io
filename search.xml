@@ -166,13 +166,21 @@
     <title>位运算（tbc）</title>
     <url>/2023/08/25/%E4%BD%8D%E8%BF%90%E7%AE%97/</url>
     <content><![CDATA[<p>介绍位运算和几种常用用法。</p>
-<p>1.整数n二进制表示中的第k位<br>2.</p>
+<p>1.整数n二进制表示中的第k位<br>2.lowbit操作：二进制中的最后一位1</p>
 <span id="more"></span>
 
 <h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><h3 id="整数n二进制表示中的第k位"><a href="#整数n二进制表示中的第k位" class="headerlink" title="整数n二进制表示中的第k位"></a>整数n二进制表示中的第k位</h3><p>1.先把第k位移到最后一位-&gt;位运算右移n&gt;&gt;k<br>2.看个位是几-&gt;与1做与运算 x&amp;1</p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">( n &gt;&gt; k ) &amp; <span class="number">1</span></span><br></pre></td></tr></table></figure>
 
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+<h3 id="lowbit操作-树状数组的基本操作"><a href="#lowbit操作-树状数组的基本操作" class="headerlink" title="lowbit操作-树状数组的基本操作"></a>lowbit操作-树状数组的基本操作</h3><p>返回x的最后一位1</p>
+<p>例如x&#x3D;1010，lowbit(x)&#x3D;10;x&#x3D;101000,lowbit(x)&#x3D;1000</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x&amp;-x; <span class="comment">// x的原码&amp;x的补码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="应用：求二进制中1的个数"><a href="#应用：求二进制中1的个数" class="headerlink" title="应用：求二进制中1的个数"></a>应用：求二进制中1的个数</h4><p>原数每次减去末尾的1，次数就是1的个数</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(x)</span><br><span class="line">&#123;</span><br><span class="line">    x-=<span class="built_in">lowbit</span>(x);</span><br><span class="line">    res++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="补充：计算机中的码"><a href="#补充：计算机中的码" class="headerlink" title="补充：计算机中的码"></a>补充：计算机中的码</h2><p>原码：二进制表示<br>反码：原码每位取反<br>补码：反码+1</p>
+]]></content>
   </entry>
   <entry>
     <title>基于hexo的next主题个人博客的相关设置和美化（tbc）</title>
@@ -263,6 +271,23 @@
 <h4 id="完整解题"><a href="#完整解题" class="headerlink" title="完整解题"></a>完整解题</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">10010</span>;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N], s[N]; <span class="comment">// s表示某个数出现的次数</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 输入数据，ary保存题目的每个数，res保存当前位置往后不重复数的长度</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 该题解法</span></span><br><span class="line">    <span class="type">int</span> res=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        s[a[i]]++;</span><br><span class="line">        <span class="keyword">while</span>(s[a[i]]&gt;<span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s[a[j]] -- ;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 输出数据，输出res数组中最大的元素</span></span><br><span class="line">    cout&lt;&lt;res&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="800-数组元素的目标和"><a href="#800-数组元素的目标和" class="headerlink" title="800.数组元素的目标和"></a>800.数组元素的目标和</h2><h3 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h3><h3 id="解题-1"><a href="#解题-1" class="headerlink" title="解题"></a>解题</h3><h2 id="2816-判断子序列"><a href="#2816-判断子序列" class="headerlink" title="2816.判断子序列"></a>2816.判断子序列</h2>]]></content>
+      <categories>
+        <category>算法</category>
+        <category>acwing</category>
+        <category>算法基础课</category>
+        <category>基础算法</category>
+      </categories>
+      <tags>
+        <tag>acwing</tag>
+        <tag>算法</tag>
+        <tag>基础算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>离散化</title>
+    <url>/2023/09/05/%E7%A6%BB%E6%95%A3%E5%8C%96/</url>
+    <content><![CDATA[<span id="more"></span>
+]]></content>
       <categories>
         <category>算法</category>
         <category>acwing</category>
