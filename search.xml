@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>github的使用</title>
+    <url>/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<img src="/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/git%E6%B5%81%E7%A8%8B%E5%9B%BE.png" class="">
+<span id="more"></span>
+
+<h2 id="克隆远程仓库到本地"><a href="#克隆远程仓库到本地" class="headerlink" title="克隆远程仓库到本地"></a>克隆远程仓库到本地</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/Repository_name.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h2><p>进入本地仓库文件夹中</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd Repository_name</span><br></pre></td></tr></table></figure>
+
+<p>然后执行：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add . # 把仓库文件夹工作区下面的文件都添加进暂存区</span><br><span class="line">git commit -m &quot;提交信息&quot; # 将暂存区中的内容提交到本体仓库</span><br><span class="line">git push -u origin master  # 将本地仓库的内容推送到远程仓库上</span><br></pre></td></tr></table></figure>
+
+<h2 id="fork"><a href="#fork" class="headerlink" title="fork"></a>fork</h2><p>看到一个挺不错的英语外刊杂志仓库<a href="https://github.com/hehonghui/awesome-english-ebooks">英语外刊杂志</a>，包含了经济学人、纽约客、卫报等杂志的内容，且包含epub、mobi和pdf格式，很适合现阶段我的英文阅读学习。</p>
+<p>刚好借此机会学习一下fork的使用，并保持与原仓库的同步。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Markdown的使用</title>
+    <url>/2023/08/23/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>关于.md文档的语法和使用vscode编写.md的设置<br>官方教程：<a href="https://markdown.com.cn/">markdown官方教程</a></p>
+<span id="more"></span>
+<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><h2 id="语法和使用"><a href="#语法和使用" class="headerlink" title="语法和使用"></a>语法和使用</h2><h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><p>在需要强调的前后加上**</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">**这是需要强调的内容**</span><br></pre></td></tr></table></figure>
+
+<p>例如：<strong>这是需要强调的内容</strong></p>
+<p>改为斜体只需要加一个*<br>例如：<em>这是需要强调的内容</em></p>
+<h3 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a>插入表格</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">| 标题1 | 标题2 | 标题3 |</span><br><span class="line">| ------ | ------ | ------ |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<table>
+<thead>
+<tr>
+<th>标题1</th>
+<th>标题2</th>
+<th>标题3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容</td>
+<td>内容</td>
+<td>内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td>内容</td>
+<td>内容</td>
+</tr>
+</tbody></table>
+<h2 id="提示和问题"><a href="#提示和问题" class="headerlink" title="提示和问题"></a>提示和问题</h2><h3 id="取消MD033-no-inline-html警告"><a href="#取消MD033-no-inline-html警告" class="headerlink" title="取消MD033&#x2F;no-inline-html警告"></a>取消MD033&#x2F;no-inline-html警告</h3><p>本意是为了使 markdown 文件是纯 markdown 的，避免在使用 html 以外的方式渲染时出错。</p>
+<p>规则原文：<a href="https://github.com/DavidAnson/markdownlint/blob/v0.29.0/doc/md033.md">https://github.com/DavidAnson/markdownlint/blob/v0.29.0/doc/md033.md</a></p>
+<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>1.打开VS Code设置<br>2.搜索markdownlint<br><img src="/2023/08/23/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8/MD033.png" alt="图片"></p>
+<p>在settings.json文件中添加如下代码</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;markdownlint.config&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span>   </span><br><span class="line">    <span class="attr">&quot;default&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;MD033&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;allowed_elements&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span> <span class="string">&quot;font&quot;</span><span class="punctuation">,</span> <span class="string">&quot;li&quot;</span><span class="punctuation">,</span> <span class="string">&quot;table&quot;</span><span class="punctuation">,</span> <span class="string">&quot;tr&quot;</span><span class="punctuation">,</span> <span class="string">&quot;td&quot;</span> <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>需要取消提示的关键词只需要在”allowed_elements”内添加即可。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hexo博客的使用方法</title>
+    <url>/2023/08/21/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>hexo和.md的一些语法记录和功能类的使用指南</p>
+<span id="more"></span>
+
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><h4 id="本地相对路径引用"><a href="#本地相对路径引用" class="headerlink" title="本地相对路径引用"></a>本地相对路径引用</h4><p>修改hexo的配置文件_config.yml中的</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>这样修改后，那么在执行hexo new post_name之后，会在_posts文件夹中生成和博文同名的文件夹，将图片资源放在该文件夹中，就可以使用下面的相对路径引用图片。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">![图片](image.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>括号内填写文件夹中图片的名称。</p>
+<p>这种引用方式在首页预览页面显示不出图片。想要显示图片可以参考下面的标签插件语法。</p>
+<h4 id="网络图片资源引用"><a href="#网络图片资源引用" class="headerlink" title="网络图片资源引用"></a>网络图片资源引用</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"># 本地图片资源，不限制图片尺寸</span><br><span class="line">&#123;% asset_img image.jpg image_name %&#125;</span><br><span class="line"># 网络图片资源，限制图片显示尺寸</span><br><span class="line">&#123;% img http://www.github.com/image_name.jpg 200 400 image_name %&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="引用站内文章"><a href="#引用站内文章" class="headerlink" title="引用站内文章"></a>引用站内文章</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;% post_link slug [title] %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>slug就是_posts文件夹中需要引用的博文的名字，title可以指定显示的标题。</p>
+<p>例如：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;% post_link 这是一篇需要引用的博文 [这是网页显示的名字] %&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="bootstrap标注"><a href="#bootstrap标注" class="headerlink" title="bootstrap标注"></a>bootstrap标注</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;% note class_name %&#125; 文字内容 (md class_name supported) &#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125; 文字内容 (md primary supported) &#123;% endnote %&#125;</span><br><span class="line">&#123;% note default %&#125; 文字内容 (md default supported) &#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125; 文字内容 (md success supported) &#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125; 文字内容 (md info supported) &#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125; 文字内容 (md warning supported) &#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125; 文字内容 (md danger supported) &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<details class="note "><summary><p>class_name</p>
+</summary>
+<p>文字内容 (md class_name supported) </p>
+
+</details>
+<div class="note primary"><p>文字内容 (md primary supported) </p>
+</div>
+<div class="note default"><p>文字内容 (md default supported) </p>
+</div>
+<div class="note success"><p>文字内容 (md success supported) </p>
+</div>
+<div class="note info"><p>文字内容 (md info supported) </p>
+</div>
+<div class="note warning"><p>文字内容 (md warning supported) </p>
+</div>
+<div class="note danger"><p>文字内容 (md danger supported) </p>
+</div>
+
+<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><h3 id="修改文章模板"><a href="#修改文章模板" class="headerlink" title="修改文章模板"></a>修改文章模板</h3><p>在scaffolds文件夹中，包含三个.md文件，只需要修改里面的内容，就可以修改相应布局初始化时候的内容。</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从0搭建基于hexo的next主题个人博客</title>
+    <url>/2023/08/20/%E4%BB%8E0%E6%90%AD%E5%BB%BA%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>记录初次搭建hexo个人博客的过程。</p>
+<p>基于hexo，使用next主题，域名使用github免费提供的github.io</p>
+<p>hexo官网：<a href="https://hexo.io/zh-cn/index.html">https://hexo.io/zh-cn/index.html</a></p>
+<p><small><small>优化和美化过程可以看另外一篇博文：<a href="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/" title="基于hexo的next主题个人博客的相关设置和美化（tbc）">基于hexo的next主题个人博客的相关设置和美化（tbc）</a><br>搭建和美化过程中遇到的问题和解决方法可以看另外一篇：<a href="/2023/08/21/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" title="搭建hexo个人博客时遇到的问题及解决方法">搭建hexo个人博客时遇到的问题及解决方法</a><br>如何使用hexo博客：<a href="/2023/08/21/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" title="hexo博客的使用方法">hexo博客的使用方法</a></small></small></p>
+<span id="more"></span>
+
+<h2 id="前置准备"><a href="#前置准备" class="headerlink" title="前置准备"></a>前置准备</h2><h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p>官网：<a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a><br><img src="/2023/08/20/%E4%BB%8E0%E6%90%AD%E5%BB%BA%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/git%E4%B8%8B%E8%BD%BD.png" alt="图片"></p>
+<h3 id="nodejs下载"><a href="#nodejs下载" class="headerlink" title="nodejs下载"></a>nodejs下载</h3><p>官网：<a href="https://nodejs.org/en">https://nodejs.org/en</a><br><img src="/2023/08/20/%E4%BB%8E0%E6%90%AD%E5%BB%BA%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/nodejs%E4%B8%8B%E8%BD%BD.png" alt="图片"></p>
+<h2 id="利用hexo在本地创建个人博客"><a href="#利用hexo在本地创建个人博客" class="headerlink" title="利用hexo在本地创建个人博客"></a>利用hexo在本地创建个人博客</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>创建hexo文件夹，打开，右键bit bash here，输入：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">-g</span> <span class="string">hexo-cli</span></span><br></pre></td></tr></table></figure>
+
+<p>如果出现idealTree:npm: sill idealTree buildDeps问题，更换npm淘宝源</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">registry</span> <span class="string">&lt;http://registry.npm.taobao.org/&gt;</span></span><br><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">get</span> <span class="string">registry</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="初始化个人博客"><a href="#初始化个人博客" class="headerlink" title="初始化个人博客"></a>初始化个人博客</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化博客</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">init</span> <span class="string">blog</span></span><br><span class="line"><span class="string">cd</span> <span class="string">blog</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span></span><br></pre></td></tr></table></figure>
+
+<p>在blog文件夹中：<br>node_modules: 依赖包<br>public：存放生成的页面<br>scaffolds：生成文章的一些模板<br>source：用来存放你的文章<br>themes：主题</p>
+<p>输入</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">s</span></span><br></pre></td></tr></table></figure>
+
+<p>出现：<br><img src="/2023/08/20/%E4%BB%8E0%E6%90%AD%E5%BB%BA%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/hexo-s.png" alt="图片"><br>则说明配置成功<br>可以在本地输入<a href="http://localhost:4000/%EF%BC%8C%E6%9C%89%E5%AE%8C%E6%95%B4%E7%BD%91%E9%A1%B5%E5%87%BA%E7%8E%B0%E8%AF%B4%E6%98%8E%E6%88%90%E5%8A%9F%E3%80%82">http://localhost:4000/，有完整网页出现说明成功。</a></p>
+<p>打开_config.yml文件，修改：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## Docs: &lt;https://hexo.io/docs/one-command-deployment&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;https://github.com/username/username.github.io.git&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># message: Site updated: &#123;&#123; now(&#x27;YYYY-MM-DD HH:mm:ss&#x27;) &#125;&#125;)</span></span><br></pre></td></tr></table></figure>
+
+<p>第16行修改为</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">&lt;https://username.github.io&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="github创建仓库"><a href="#github创建仓库" class="headerlink" title="github创建仓库"></a>github创建仓库</h3><p>新建仓库，为 username.github.io 的固定格式</p>
+<p>安装git部署命令工具</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-deployer-git</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
+
+<p>输入</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure>
+
+<p>就可以在<a href="https://username.github.io在线访问到博客了./">https://username.github.io在线访问到博客了。</a></p>
+<h2 id="添加Next主题"><a href="#添加Next主题" class="headerlink" title="添加Next主题"></a>添加Next主题</h2><p>在blog根目录执行</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="string">&lt;https://github.com/next-theme/hexo-theme-next&gt;</span> <span class="string">themes/next</span></span><br></pre></td></tr></table></figure>
+
+<p>打开 _config.yml 文件，修改theme为next</p>
+<h2 id="github-io-404问题"><a href="#github-io-404问题" class="headerlink" title="github.io 404问题"></a>github.io 404问题</h2><p>本地部署没有问题，但部署到线上发现始终是404。</p>
+<p>发现：<br>1.blog仓库不能设为private。<br>2.点进仓库settings，右侧点进pages，初始化一下。</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>位运算（tbc）</title>
+    <url>/2023/08/25/%E4%BD%8D%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<p>介绍位运算和几种常用用法。</p>
+<p>1.整数n二进制表示中的第k位<br>2.</p>
+<span id="more"></span>
+
+<h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><h3 id="整数n二进制表示中的第k位"><a href="#整数n二进制表示中的第k位" class="headerlink" title="整数n二进制表示中的第k位"></a>整数n二进制表示中的第k位</h3><p>1.先把第k位移到最后一位-&gt;位运算右移n&gt;&gt;k<br>2.看个位是几-&gt;与1做与运算 x&amp;1</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">( n &gt;&gt; k ) &amp; <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+  </entry>
+  <entry>
+    <title>基于hexo的next主题个人博客的相关设置和美化（tbc）</title>
+    <url>/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<p>记录博客的优化和美化。</p>
+<span id="more"></span>
+
+<h2 id="next主题"><a href="#next主题" class="headerlink" title="next主题"></a>next主题</h2><p>next官网仓库：<a href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a><br>next使用文档：<a href="https://theme-next.iissnan.com/getting-started.html">https://theme-next.iissnan.com/getting-started.html</a></p>
+<h3 id="侧边栏scheme的选择"><a href="#侧边栏scheme的选择" class="headerlink" title="侧边栏scheme的选择"></a>侧边栏scheme的选择</h3><p>主题配置文件_config.yml中，修改scheme</p>
+<p><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/scheme.png" alt="图片"><br>本博客使用的是Pisces双栏主题。</p>
+<h3 id="头像"><a href="#头像" class="headerlink" title="头像"></a>头像</h3><p>将头像放在theme&#x2F;next&#x2F;source&#x2F;images&#x2F; 路径中，并在主题配置文件_config.yml中，修改字段avatar为avatar: &#x2F;images&#x2F;avatar_name.png</p>
+<h2 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h2><h3 id="文章内配色"><a href="#文章内配色" class="headerlink" title="文章内配色"></a>文章内配色</h3><h3 id="标题颜色"><a href="#标题颜色" class="headerlink" title="标题颜色"></a>标题颜色</h3><h3 id="标题美化"><a href="#标题美化" class="headerlink" title="标题美化"></a>标题美化</h3><h3 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h3><h2 id="功能类"><a href="#功能类" class="headerlink" title="功能类"></a>功能类</h2><h3 id="启用分类-标签"><a href="#启用分类-标签" class="headerlink" title="启用分类&#x2F;标签"></a>启用分类&#x2F;标签</h3><h4 id="添加tags页面"><a href="#添加tags页面" class="headerlink" title="添加tags页面"></a>添加tags页面</h4><p>在博客根目录下执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+
+<p>将这个page的类型设置为tags</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">标签</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2023-8</span><span class="number">-20</span> <span class="number">12</span><span class="string">:39:04</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="在主页菜单中添加跳转链接"><a href="#在主页菜单中添加跳转链接" class="headerlink" title="在主页菜单中添加跳转链接"></a>在主页菜单中添加跳转链接</h4><p>编辑主题配置文件_config.yml，将tags添加到menu中。<br><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/menu.png" alt="图片"></p>
+<h3 id="阅读次数"><a href="#阅读次数" class="headerlink" title="阅读次数"></a>阅读次数</h3><h3 id="字数统计和阅读时长"><a href="#字数统计和阅读时长" class="headerlink" title="字数统计和阅读时长"></a>字数统计和阅读时长</h3><p><small><small>装这个hexo-wordcount的时候报错了好几天，一直没解决，还以为是npm有问题。<br>某天突然发现文档<a href="https://hexo-next.readthedocs.io/zh_CN/latest/next/advanced/%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1/">hexo-next字数统计</a>里的相关阅读链接指向的是hexo-symbols-count-time，试着装了一下，完美运行。。</small></small></p>
+<p>插件主页：<a href="https://github.com/theme-next/hexo-symbols-count-time">hexo-symbols-count-time</a></p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>1.安装<strong>插件</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time</span><br></pre></td></tr></table></figure>
+
+<p>2.在<strong>站点配置文件_config.yml</strong>的末尾添加</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">symbols:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">time:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_symbols:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_time:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">exclude_codeblock:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">awl:</span> <span class="number">2</span></span><br><span class="line">  <span class="attr">wpm:</span> <span class="number">300</span></span><br><span class="line">  <span class="attr">suffix:</span> <span class="string">&quot;mins.&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>参数awl-平均字节长度，中文推荐2，英文推荐5；<br>参数wpm每分钟阅读字数，中文推荐300。</p>
+<p>3.修改<strong>主题配置文件_config.yml</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="markdown"><a href="#markdown" class="headerlink" title="markdown"></a>markdown</h2><h3 id="中文首行缩进"><a href="#中文首行缩进" class="headerlink" title="中文首行缩进"></a>中文首行缩进</h3><p>在行前添加两个&ensp;转义字符。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&amp;ensp;</span><span class="symbol">&amp;ensp;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建hexo个人博客时遇到的问题及解决方法</title>
+    <url>/2023/08/21/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>记录搭建和优化hexo个人博客时，个人遇到的一些已解决和尚未解决的问题。</p>
+<span id="more"></span>
+<h2 id="github"><a href="#github" class="headerlink" title="github"></a>github</h2><h3 id="404"><a href="#404" class="headerlink" title="404"></a>404</h3><p>在刚开始搭建博客的时候，执行hexo s和hexo d之后发现本地localhost访问显示正常，但用username.github.io域名访问的时候显示404。</p>
+<p>解决方法：<br>1.首先最重要的，仓库名和域名必须和github用户名一致。<br>2.blog存放的仓库必须要设置为public，因为private仓库要使得博客可以公开访问需要购买github会员服务。<br>在github仓库Settings页面首页，直接下拉到最后看到Danger Zone，修改仓库权限就是第一个选项。<br><img src="/2023/08/21/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/changepublic.png" alt="图片"><br>3.进入github仓库主页，进入Settings后，点击右侧的Pages，初始化一下个人域名。<br><img src="/2023/08/21/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/githubpage.png" alt="图片"></p>
+<h3 id="github连接错误"><a href="#github连接错误" class="headerlink" title="github连接错误"></a>github连接错误</h3><p><img src="/2023/08/21/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/github%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF.png" alt="图片"><br>不多说了，梯子换个节点。</p>
+<h2 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h2><h3 id="npm-install卡住"><a href="#npm-install卡住" class="headerlink" title="npm install卡住"></a>npm install卡住</h3><p>尝试更换淘宝源</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set registry &lt;http://registry.npm.taobao.org/&gt;</span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>npm</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>双指针算法（tbc）</title>
+    <url>/2023/08/22/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<p>两种情况：<br>1.两个指针分别指向一个序列<br>2.两个指针指向一个序列</p>
+<p>核心思想：将双层for循环O(n^2)优化时间复杂度到O(n)</p>
+<span id="more"></span>
+
+<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>1.从<strong>暴力</strong>的思路来思考一个朴素解法<br>2.找到朴素解法中的<strong>规律</strong>性质，特别是<strong>单调性</strong>，优化朴素解法（使用双指针算法）。使得枚举n^2的次数减少成枚举n的次数。</p>
+<h2 id="讲解"><a href="#讲解" class="headerlink" title="讲解"></a>讲解</h2><p>基本双指针问题都可以从下面的模板修改：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;i &amp;&amp; <span class="built_in">check</span>(i,j)) j++;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//每道题目具体逻辑</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>例题：输入一个字符串，每个单词用空格隔开，输出单词。<br>解法：<br>1.i和j同时指向第一个字符，j向后扫描，遇到空格停下来，并且输出i到j的字符<br>2.将i指向j，继续。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;n &amp;&amp; str[j]!=<span class="string">&#x27; &#x27;</span>) j++;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//每道题目具体逻辑</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> k=i;k&lt;j;k++) cout &lt;&lt; str[k];</span><br><span class="line">    cout &lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    i=j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="799-最长连续不重复子序列"><a href="#799-最长连续不重复子序列" class="headerlink" title="799.最长连续不重复子序列"></a>799.最长连续不重复子序列</h2><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给定一个长度为 n 的整数序列，请找出最长的不包含重复的数的连续区间，输出它的长度</p>
+<p>输入格式<br>第一行包含整数 n<br>第二行包含 n 个整数（均在 0∼105 范围内），表示整数序列。</p>
+<p>输出格式<br>共一行，包含一个整数，表示最长的不包含重复的数的连续区间的长度。</p>
+<p>数据范围<br>1≤n≤105<br>输入样例：<br>5<br>1 2 2 3 5<br>输出样例：<br>3</p>
+<h3 id="解题"><a href="#解题" class="headerlink" title="解题"></a>解题</h3><p>check(j,i)表示区间[j,i]内有重复元素</p>
+<h4 id="朴素"><a href="#朴素" class="headerlink" title="朴素"></a>朴素</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 朴素做法O(n^2)</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=i;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">check</span>(j,i))</span><br><span class="line">        &#123;</span><br><span class="line">            res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h4><p>i指针往后移动的时候，j指针也向后移动，都具有单调性</p>
+<p>j：j往左能最远到什么地方：离i最远且区间内不包含重复的数。<br>可以得出j不可能比上一个j更加左，否则区间内会有重复的数，跟上一次的情况是重复的。</p>
+<p>所以优化后的j不可能从0开始，而是直接从上一次的j往后移动。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 优化：双指针算法O(n)</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=i &amp;&amp; <span class="built_in">check</span>(j,i)) j++;</span><br><span class="line"></span><br><span class="line">    res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="完整解题"><a href="#完整解题" class="headerlink" title="完整解题"></a>完整解题</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">10010</span>;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N], s[N]; <span class="comment">// s表示某个数出现的次数</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 输入数据，ary保存题目的每个数，res保存当前位置往后不重复数的长度</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 该题解法</span></span><br><span class="line">    <span class="type">int</span> res=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        s[a[i]]++;</span><br><span class="line">        <span class="keyword">while</span>(s[a[i]]&gt;<span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s[a[j]] -- ;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 输出数据，输出res数组中最大的元素</span></span><br><span class="line">    cout&lt;&lt;res&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="800-数组元素的目标和"><a href="#800-数组元素的目标和" class="headerlink" title="800.数组元素的目标和"></a>800.数组元素的目标和</h2><h3 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h3><h3 id="解题-1"><a href="#解题-1" class="headerlink" title="解题"></a>解题</h3><h2 id="2816-判断子序列"><a href="#2816-判断子序列" class="headerlink" title="2816.判断子序列"></a>2816.判断子序列</h2>]]></content>
+      <categories>
+        <category>算法</category>
+        <category>acwing</category>
+        <category>算法基础课</category>
+        <category>基础算法</category>
+      </categories>
+      <tags>
+        <tag>acwing</tag>
+        <tag>算法</tag>
+        <tag>基础算法</tag>
+      </tags>
+  </entry>
+</search>
