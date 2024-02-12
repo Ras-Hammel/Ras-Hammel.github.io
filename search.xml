@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>github的使用</title>
-    <url>/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<img src="/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/git%E6%B5%81%E7%A8%8B%E5%9B%BE.png" class="">
-<span id="more"></span>
-
-<h2 id="克隆远程仓库到本地"><a href="#克隆远程仓库到本地" class="headerlink" title="克隆远程仓库到本地"></a>克隆远程仓库到本地</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/Repository_name.git</span><br></pre></td></tr></table></figure>
-
-<h2 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h2><p>进入本地仓库文件夹中</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd Repository_name</span><br></pre></td></tr></table></figure>
-
-<p>然后执行：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add . # 把仓库文件夹工作区下面的文件都添加进暂存区</span><br><span class="line">git commit -m &quot;提交信息&quot; # 将暂存区中的内容提交到本体仓库</span><br><span class="line">git push -u origin master  # 将本地仓库的内容推送到远程仓库上</span><br></pre></td></tr></table></figure>
-
-<h2 id="fork"><a href="#fork" class="headerlink" title="fork"></a>fork</h2><p>看到一个挺不错的英语外刊杂志仓库<a href="https://github.com/hehonghui/awesome-english-ebooks">英语外刊杂志</a>，包含了经济学人、纽约客、卫报等杂志的内容，且包含epub、mobi和pdf格式，很适合现阶段我的英文阅读学习。</p>
-<p>刚好借此机会学习一下fork的使用，并保持与原仓库的同步。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Markdown的使用</title>
     <url>/2023/08/23/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>关于.md文档的语法和使用vscode编写.md的设置<br>官方教程：<a href="https://markdown.com.cn/">markdown官方教程</a></p>
@@ -60,10 +42,37 @@
 ]]></content>
   </entry>
   <entry>
+    <title>github的使用</title>
+    <url>/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<img src="/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/git%E6%B5%81%E7%A8%8B%E5%9B%BE.png" class="">
+<span id="more"></span>
+
+<h2 id="克隆远程仓库到本地"><a href="#克隆远程仓库到本地" class="headerlink" title="克隆远程仓库到本地"></a>克隆远程仓库到本地</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/Repository_name.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h2><p>进入本地仓库文件夹中</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd Repository_name</span><br></pre></td></tr></table></figure>
+
+<p>然后执行：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add . # 把仓库文件夹工作区下面的文件都添加进暂存区</span><br><span class="line">git commit -m &quot;提交信息&quot; # 将暂存区中的内容提交到本体仓库</span><br><span class="line">git push -u origin master  # 将本地仓库的内容推送到远程仓库上</span><br></pre></td></tr></table></figure>
+
+<h2 id="fork"><a href="#fork" class="headerlink" title="fork"></a>fork</h2><p>看到一个挺不错的英语外刊杂志仓库<a href="https://github.com/hehonghui/awesome-english-ebooks">英语外刊杂志</a>，包含了经济学人、纽约客、卫报等杂志的内容，且包含epub、mobi和pdf格式，很适合现阶段我的英文阅读学习。</p>
+<p>刚好借此机会学习一下fork的使用，并保持与原仓库的同步。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>hexo博客的使用方法</title>
     <url>/2023/08/21/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>hexo和.md的一些语法记录和功能类的使用指南</p>
 <span id="more"></span>
+
+<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="新建一篇博文new"><a href="#新建一篇博文new" class="headerlink" title="新建一篇博文new"></a>新建一篇博文new</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> [<span class="string">layout</span>] <span class="string">&lt;title&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果title包含空格，请使用双引号括起来。</p>
+<h3 id="生成静态文件generate"><a href="#生成静态文件generate" class="headerlink" title="生成静态文件generate"></a>生成静态文件generate</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">g</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="部署deploy"><a href="#部署deploy" class="headerlink" title="部署deploy"></a>部署deploy</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="启动服务器server"><a href="#启动服务器server" class="headerlink" title="启动服务器server"></a>启动服务器server</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">s</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><h4 id="本地相对路径引用"><a href="#本地相对路径引用" class="headerlink" title="本地相对路径引用"></a>本地相对路径引用</h4><p>修改hexo的配置文件_config.yml中的</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
@@ -183,6 +192,47 @@
 ]]></content>
   </entry>
   <entry>
+    <title>双指针算法（tbc）</title>
+    <url>/2023/08/22/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<p>两种情况：<br>1.两个指针分别指向一个序列<br>2.两个指针指向一个序列</p>
+<p>核心思想：将双层for循环O(n^2)优化时间复杂度到O(n)</p>
+<span id="more"></span>
+
+<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>1.从<strong>暴力</strong>的思路来思考一个朴素解法<br>2.找到朴素解法中的<strong>规律</strong>性质，特别是<strong>单调性</strong>，优化朴素解法（使用双指针算法）。使得枚举n^2的次数减少成枚举n的次数。</p>
+<h2 id="讲解"><a href="#讲解" class="headerlink" title="讲解"></a>讲解</h2><p>基本双指针问题都可以从下面的模板修改：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;i &amp;&amp; <span class="built_in">check</span>(i,j)) j++;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//每道题目具体逻辑</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>例题：输入一个字符串，每个单词用空格隔开，输出单词。<br>解法：<br>1.i和j同时指向第一个字符，j向后扫描，遇到空格停下来，并且输出i到j的字符<br>2.将i指向j，继续。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;n &amp;&amp; str[j]!=<span class="string">&#x27; &#x27;</span>) j++;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//每道题目具体逻辑</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> k=i;k&lt;j;k++) cout &lt;&lt; str[k];</span><br><span class="line">    cout &lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    i=j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="799-最长连续不重复子序列"><a href="#799-最长连续不重复子序列" class="headerlink" title="799.最长连续不重复子序列"></a>799.最长连续不重复子序列</h2><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给定一个长度为 n 的整数序列，请找出最长的不包含重复的数的连续区间，输出它的长度</p>
+<p>输入格式<br>第一行包含整数 n<br>第二行包含 n 个整数（均在 0∼105 范围内），表示整数序列。</p>
+<p>输出格式<br>共一行，包含一个整数，表示最长的不包含重复的数的连续区间的长度。</p>
+<p>数据范围<br>1≤n≤105<br>输入样例：<br>5<br>1 2 2 3 5<br>输出样例：<br>3</p>
+<h3 id="解题"><a href="#解题" class="headerlink" title="解题"></a>解题</h3><p>check(j,i)表示区间[j,i]内有重复元素</p>
+<h4 id="朴素"><a href="#朴素" class="headerlink" title="朴素"></a>朴素</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 朴素做法O(n^2)</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=i;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">check</span>(j,i))</span><br><span class="line">        &#123;</span><br><span class="line">            res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h4><p>i指针往后移动的时候，j指针也向后移动，都具有单调性</p>
+<p>j：j往左能最远到什么地方：离i最远且区间内不包含重复的数。<br>可以得出j不可能比上一个j更加左，否则区间内会有重复的数，跟上一次的情况是重复的。</p>
+<p>所以优化后的j不可能从0开始，而是直接从上一次的j往后移动。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 优化：双指针算法O(n)</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=i &amp;&amp; <span class="built_in">check</span>(j,i)) j++;</span><br><span class="line"></span><br><span class="line">    res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="完整解题"><a href="#完整解题" class="headerlink" title="完整解题"></a>完整解题</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">10010</span>;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N], s[N]; <span class="comment">// s表示某个数出现的次数</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 输入数据，ary保存题目的每个数，res保存当前位置往后不重复数的长度</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 该题解法</span></span><br><span class="line">    <span class="type">int</span> res=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        s[a[i]]++;</span><br><span class="line">        <span class="keyword">while</span>(s[a[i]]&gt;<span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s[a[j]] -- ;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 输出数据，输出res数组中最大的元素</span></span><br><span class="line">    cout&lt;&lt;res&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="800-数组元素的目标和"><a href="#800-数组元素的目标和" class="headerlink" title="800.数组元素的目标和"></a>800.数组元素的目标和</h2><h3 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h3><h3 id="解题-1"><a href="#解题-1" class="headerlink" title="解题"></a>解题</h3><h2 id="2816-判断子序列"><a href="#2816-判断子序列" class="headerlink" title="2816.判断子序列"></a>2816.判断子序列</h2>]]></content>
+      <categories>
+        <category>算法</category>
+        <category>acwing</category>
+        <category>算法基础课</category>
+        <category>基础算法</category>
+      </categories>
+      <tags>
+        <tag>acwing</tag>
+        <tag>算法</tag>
+        <tag>基础算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于hexo的next主题个人博客的相关设置和美化（tbc）</title>
     <url>/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<p>记录博客的优化和美化。</p>
@@ -231,7 +281,7 @@
 <p>解决方法：<br>1.首先最重要的，仓库名和域名必须和github用户名一致。<br>2.blog存放的仓库必须要设置为public，因为private仓库要使得博客可以公开访问需要购买github会员服务。<br>在github仓库Settings页面首页，直接下拉到最后看到Danger Zone，修改仓库权限就是第一个选项。<br><img src="/2023/08/21/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/changepublic.png" alt="图片"><br>3.进入github仓库主页，进入Settings后，点击右侧的Pages，初始化一下个人域名。<br><img src="/2023/08/21/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/githubpage.png" alt="图片"></p>
 <h3 id="github连接错误"><a href="#github连接错误" class="headerlink" title="github连接错误"></a>github连接错误</h3><p><img src="/2023/08/21/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/github%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF.png" alt="图片"><br>不多说了，梯子换个节点。</p>
 <h2 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h2><h3 id="npm-install卡住"><a href="#npm-install卡住" class="headerlink" title="npm install卡住"></a>npm install卡住</h3><p>尝试更换淘宝源</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set registry &lt;http://registry.npm.taobao.org/&gt;</span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org/</span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>博客</category>
@@ -240,47 +290,6 @@
         <tag>hexo</tag>
         <tag>npm</tag>
         <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>双指针算法（tbc）</title>
-    <url>/2023/08/22/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<p>两种情况：<br>1.两个指针分别指向一个序列<br>2.两个指针指向一个序列</p>
-<p>核心思想：将双层for循环O(n^2)优化时间复杂度到O(n)</p>
-<span id="more"></span>
-
-<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>1.从<strong>暴力</strong>的思路来思考一个朴素解法<br>2.找到朴素解法中的<strong>规律</strong>性质，特别是<strong>单调性</strong>，优化朴素解法（使用双指针算法）。使得枚举n^2的次数减少成枚举n的次数。</p>
-<h2 id="讲解"><a href="#讲解" class="headerlink" title="讲解"></a>讲解</h2><p>基本双指针问题都可以从下面的模板修改：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;i &amp;&amp; <span class="built_in">check</span>(i,j)) j++;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//每道题目具体逻辑</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>例题：输入一个字符串，每个单词用空格隔开，输出单词。<br>解法：<br>1.i和j同时指向第一个字符，j向后扫描，遇到空格停下来，并且输出i到j的字符<br>2.将i指向j，继续。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;n &amp;&amp; str[j]!=<span class="string">&#x27; &#x27;</span>) j++;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//每道题目具体逻辑</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> k=i;k&lt;j;k++) cout &lt;&lt; str[k];</span><br><span class="line">    cout &lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    i=j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="799-最长连续不重复子序列"><a href="#799-最长连续不重复子序列" class="headerlink" title="799.最长连续不重复子序列"></a>799.最长连续不重复子序列</h2><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给定一个长度为 n 的整数序列，请找出最长的不包含重复的数的连续区间，输出它的长度</p>
-<p>输入格式<br>第一行包含整数 n<br>第二行包含 n 个整数（均在 0∼105 范围内），表示整数序列。</p>
-<p>输出格式<br>共一行，包含一个整数，表示最长的不包含重复的数的连续区间的长度。</p>
-<p>数据范围<br>1≤n≤105<br>输入样例：<br>5<br>1 2 2 3 5<br>输出样例：<br>3</p>
-<h3 id="解题"><a href="#解题" class="headerlink" title="解题"></a>解题</h3><p>check(j,i)表示区间[j,i]内有重复元素</p>
-<h4 id="朴素"><a href="#朴素" class="headerlink" title="朴素"></a>朴素</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 朴素做法O(n^2)</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=i;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">check</span>(j,i))</span><br><span class="line">        &#123;</span><br><span class="line">            res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h4><p>i指针往后移动的时候，j指针也向后移动，都具有单调性</p>
-<p>j：j往左能最远到什么地方：离i最远且区间内不包含重复的数。<br>可以得出j不可能比上一个j更加左，否则区间内会有重复的数，跟上一次的情况是重复的。</p>
-<p>所以优化后的j不可能从0开始，而是直接从上一次的j往后移动。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 优化：双指针算法O(n)</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=i &amp;&amp; <span class="built_in">check</span>(j,i)) j++;</span><br><span class="line"></span><br><span class="line">    res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="完整解题"><a href="#完整解题" class="headerlink" title="完整解题"></a>完整解题</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">10010</span>;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N], s[N]; <span class="comment">// s表示某个数出现的次数</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 输入数据，ary保存题目的每个数，res保存当前位置往后不重复数的长度</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 该题解法</span></span><br><span class="line">    <span class="type">int</span> res=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        s[a[i]]++;</span><br><span class="line">        <span class="keyword">while</span>(s[a[i]]&gt;<span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s[a[j]] -- ;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        res=<span class="built_in">max</span>(res,i-j+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 输出数据，输出res数组中最大的元素</span></span><br><span class="line">    cout&lt;&lt;res&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="800-数组元素的目标和"><a href="#800-数组元素的目标和" class="headerlink" title="800.数组元素的目标和"></a>800.数组元素的目标和</h2><h3 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h3><h3 id="解题-1"><a href="#解题-1" class="headerlink" title="解题"></a>解题</h3><h2 id="2816-判断子序列"><a href="#2816-判断子序列" class="headerlink" title="2816.判断子序列"></a>2816.判断子序列</h2>]]></content>
-      <categories>
-        <category>算法</category>
-        <category>acwing</category>
-        <category>算法基础课</category>
-        <category>基础算法</category>
-      </categories>
-      <tags>
-        <tag>acwing</tag>
-        <tag>算法</tag>
-        <tag>基础算法</tag>
       </tags>
   </entry>
   <entry>
@@ -298,6 +307,20 @@
         <tag>acwing</tag>
         <tag>算法</tag>
         <tag>基础算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于SpringBoot+SpringCloud的尚硅谷Java项目《尚品甄选》</title>
+    <url>/2024/02/12/%E5%9F%BA%E4%BA%8ESpringBoot-SpringCloud%E7%9A%84%E5%B0%9A%E7%A1%85%E8%B0%B7Java%E9%A1%B9%E7%9B%AE%E3%80%8A%E5%B0%9A%E5%93%81%E7%94%84%E9%80%89%E3%80%8B/</url>
+    <content><![CDATA[<p>b站链接：<a href="https://www.bilibili.com/video/BV1NF411S7DS/">https://www.bilibili.com/video/BV1NF411S7DS/</a><br>跟随尚硅谷的Java项目实操学习。本博客记录学习笔记和开发过程中遇到的问题。</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>SpringBoot</tag>
+        <tag>SpringCloud</tag>
       </tags>
   </entry>
 </search>
