@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2024年看过的作品</title>
+    <url>/2024/03/01/2024%E5%B9%B4%E7%9C%8B%E8%BF%87%E7%9A%84%E4%BD%9C%E5%93%81/</url>
+    <content><![CDATA[<p>包含动画、影视、书籍等</p>
+<span id="more"></span>
+
+<h2 id="2月"><a href="#2月" class="headerlink" title="2月"></a>2月</h2><p>动画 蓝眼武士 8 <a href="/2024/02/15/%E3%80%8ABlue-Eye-Samurai-%E8%93%9D%E7%9C%BC%E6%AD%A6%E5%A3%AB%E3%80%8B/" title="《Blue Eye Samurai 蓝眼武士》">《蓝眼武士》观后感</a></p>
+<div class="note default"><p>不错的网飞动画，也充斥着白人对武士道的刻板印象。写了观后感，可以看上面的站内跳转。</p>
+</div>
+
+<p>美剧 剧版 史密斯夫妇 6</p>
+<div class="note default"><p>无功无过..网上评价很高，但是我自己集中不了精神观赏 </p>
+</div>
+
+<p>动画电影 镜之孤城 7.5</p>
+<div class="note default"><p>反对校园暴力的主题，将七个不同时间线的角色并联起来的故事。碍于电影时长除了女主以外的角色刻画都不是很够，但我觉得挺不错的。 </p>
+</div>
+
+<h2 id="3月"><a href="#3月" class="headerlink" title="3月"></a>3月</h2><p>动画电影 通往夏天的隧道，再见的出口 6.5</p>
+<div class="note default"><p>一个半小时的纯爱电影，也是碍于电影时长省略了很多细节。歌不错。男主找回了爱人和被爱的权利。 </p>
+</div>]]></content>
+      <categories>
+        <category>文艺作品</category>
+      </categories>
+      <tags>
+        <tag>观后感</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>github的使用</title>
+    <url>/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<img src="/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/git%E6%B5%81%E7%A8%8B%E5%9B%BE.png" class="">
+<span id="more"></span>
+
+<h2 id="克隆远程仓库到本地"><a href="#克隆远程仓库到本地" class="headerlink" title="克隆远程仓库到本地"></a>克隆远程仓库到本地</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/Repository_name.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h2><p>进入本地仓库文件夹中</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd Repository_name</span><br></pre></td></tr></table></figure>
+
+<p>然后执行：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add . # 把仓库文件夹工作区下面的文件都添加进暂存区</span><br><span class="line">git commit -m &quot;提交信息&quot; # 将暂存区中的内容提交到本体仓库</span><br><span class="line">git push -u origin master  # 将本地仓库的内容推送到远程仓库上</span><br></pre></td></tr></table></figure>
+
+<h2 id="fork"><a href="#fork" class="headerlink" title="fork"></a>fork</h2><p>看到一个挺不错的英语外刊杂志仓库<a href="https://github.com/hehonghui/awesome-english-ebooks">英语外刊杂志</a>，包含了经济学人、纽约客、卫报等杂志的内容，且包含epub、mobi和pdf格式，很适合现阶段我的英文阅读学习。</p>
+<p>刚好借此机会学习一下fork的使用，并保持与原仓库的同步。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Markdown的使用</title>
     <url>/2023/08/23/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>关于.md文档的语法和使用vscode编写.md的设置<br>官方教程：<a href="https://markdown.com.cn/">markdown官方教程</a></p>
@@ -39,24 +85,6 @@
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;markdownlint.config&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span>   </span><br><span class="line">    <span class="attr">&quot;default&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;MD033&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;allowed_elements&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span> <span class="string">&quot;font&quot;</span><span class="punctuation">,</span> <span class="string">&quot;li&quot;</span><span class="punctuation">,</span> <span class="string">&quot;table&quot;</span><span class="punctuation">,</span> <span class="string">&quot;tr&quot;</span><span class="punctuation">,</span> <span class="string">&quot;td&quot;</span> <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 
 <p>需要取消提示的关键词只需要在”allowed_elements”内添加即可。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>github的使用</title>
-    <url>/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<img src="/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/git%E6%B5%81%E7%A8%8B%E5%9B%BE.png" class="">
-<span id="more"></span>
-
-<h2 id="克隆远程仓库到本地"><a href="#克隆远程仓库到本地" class="headerlink" title="克隆远程仓库到本地"></a>克隆远程仓库到本地</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/Repository_name.git</span><br></pre></td></tr></table></figure>
-
-<h2 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h2><p>进入本地仓库文件夹中</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd Repository_name</span><br></pre></td></tr></table></figure>
-
-<p>然后执行：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add . # 把仓库文件夹工作区下面的文件都添加进暂存区</span><br><span class="line">git commit -m &quot;提交信息&quot; # 将暂存区中的内容提交到本体仓库</span><br><span class="line">git push -u origin master  # 将本地仓库的内容推送到远程仓库上</span><br></pre></td></tr></table></figure>
-
-<h2 id="fork"><a href="#fork" class="headerlink" title="fork"></a>fork</h2><p>看到一个挺不错的英语外刊杂志仓库<a href="https://github.com/hehonghui/awesome-english-ebooks">英语外刊杂志</a>，包含了经济学人、纽约客、卫报等杂志的内容，且包含epub、mobi和pdf格式，很适合现阶段我的英文阅读学习。</p>
-<p>刚好借此机会学习一下fork的使用，并保持与原仓库的同步。</p>
 ]]></content>
   </entry>
   <entry>
@@ -121,6 +149,29 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《Blue Eye Samurai 蓝眼武士》</title>
+    <url>/2024/02/15/%E3%80%8ABlue-Eye-Samurai-%E8%93%9D%E7%9C%BC%E6%AD%A6%E5%A3%AB%E3%80%8B/</url>
+    <content><![CDATA[<p>讲述日本江户时代时期，混血儿武士阿水复仇和觉醒之路。</p>
+<p>本来以为只是单纯的复仇打斗片，但本故事想讲的并不仅仅如此。<br>除了女扮男装的武士阿水，本片中另一个重要女角色公主也极大的展现了该片想表达的主题观点。我认为这其实是一部探索自我、女性解放的优秀作品。</p>
+<span id="more"></span>
+
+<h2 id="探索自我"><a href="#探索自我" class="headerlink" title="探索自我"></a>探索自我</h2><p>阿水的复仇之路也可以说是其本身对自己身份的探索过程。<br>身为出生在闭关锁国时期的日本，阿水混血儿的身份并不能让她自己产生共鸣，更使得她自己对自己的身份、对白人父亲产生厌恶，她将自己的妓女母亲奉为生存的支柱，直到居住的木屋被他人烧毁。但养她长大的妓女是否是其真正的母亲，我们也无从得知，片尾也对此留了一点悬念。</p>
+<p>阿水遇到的盲眼老人、铸剑师永治，是锚定她身份转变的一个重要人物。我认为永治大师锚定了阿水身份转变的两个重要节点：一是阿水从妓女母亲身边脱离，成为一名铸剑学徒，在永治大师身边偷偷学习顾客的武士道，同时也为阿水的复仇之路埋下种子。二是阿水在复仇迷茫之际，永治大师为其指引了她真正该追寻的方向，追寻自己与自己的和解，追寻万物之间的平和。</p>
+<p>值得一提的是本片中的一个重要剧情：阿水在复仇途中被仇恨蒙蔽双眼，使得剑断重伤战败。当她再次试图重新铸剑时，却屡屡失败。最终阿水在身上写上心经，融合了铃铛、永治大师的工具（我认为这也预示着阿水将自己的经历化为己有，真正回顾自己走过的路，而不是除了仇恨看不到其他事物），最终重新铸就了一把合适的武士刀。</p>
+<p>武士刀的练就代表着阿水本身人格的铸就，从最初的毫无杂质（只有仇恨）到融合了其他金属的最终形态（阿水的经历、老师、徒弟），为阿水的胜利带来曙光。</p>
+<h2 id="女性解放"><a href="#女性解放" class="headerlink" title="女性解放"></a>女性解放</h2><p>本片另一个女性角色公主在推动女性解放议题上起了重要作用。最初依靠父亲、到逃婚追逐真爱、到逐渐觉醒追寻到自己想做的事、以及结尾暗示的公主将借助自己的丈夫干涉国家政治成为伟人。</p>
+<p>公主作为一个在温室长大的女儿，在父亲的庇护下享尽了荣华富贵。当然她也只是她父亲的一枚棋子而已——长大之后，必须遵从父亲的命令嫁给他人。公主此时已有了心上人，她决定在成婚前寻找为了洗去屈辱而追逐阿水的泰源。<br>中途公主借助妓院来到了泰源所在地，也在这里找到了阿水。而父亲派来的追兵最终将公主带了回去。<br>公主迷茫之际，再次遇到从妓院来庆祝公主婚礼的一帮朋友，也在此公主意识到她自己的力量是无穷的，即使她在公众面上无法出面，她却可以通过甜言蜜语借助自己的丈夫做到自己想做的事情。</p>
+<p>至此，公主从一个天真烂漫的女孩长大成为了有手段有目的的女人。</p>
+]]></content>
+      <categories>
+        <category>文艺作品</category>
+      </categories>
+      <tags>
+        <tag>观后感</tag>
+        <tag>影视</tag>
       </tags>
   </entry>
   <entry>
@@ -237,23 +288,61 @@
       </tags>
   </entry>
   <entry>
+    <title>在vscode中配置java</title>
+    <url>/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/</url>
+    <content><![CDATA[<p>在vscode里配置jdk。</p>
+<span id="more"></span>
+
+<h2 id="jdk下载和配置"><a href="#jdk下载和配置" class="headerlink" title="jdk下载和配置"></a>jdk下载和配置</h2><p>jdk下载网站：<a href="https://www.oracle.com/java/technologies/downloads/#jdk21-windows">https://www.oracle.com/java/technologies/downloads/#jdk21-windows</a><br>注意要下windows版本，不要下错成其他版本了。。</p>
+<p>下面是经典的系统变量配置：<br>1.添加系统变量JAVA_HOME: D:\Program\jdk\jdk-21<br>2.在系统变量Path中新建添加：D:\Program\jdk\jdk-21\bin</p>
+<h2 id="vscode配置"><a href="#vscode配置" class="headerlink" title="vscode配置"></a>vscode配置</h2><h3 id="插件下载"><a href="#插件下载" class="headerlink" title="插件下载"></a>插件下载</h3><p>插件商店搜索并下载Extension Pack for Java<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/extension.png" alt="图片"></p>
+<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>在vscode设置中搜索java.home，并将java.home的路径设置为jdk目录<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/jdk.png" alt="图片"></p>
+<p>然后就ok了，随便试一下吧。</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于SpringBoot+SpringCloud的尚硅谷Java项目《尚品甄选》</title>
+    <url>/2024/02/12/%E5%9F%BA%E4%BA%8ESpringBoot-SpringCloud%E7%9A%84%E5%B0%9A%E7%A1%85%E8%B0%B7Java%E9%A1%B9%E7%9B%AE%E3%80%8A%E5%B0%9A%E5%93%81%E7%94%84%E9%80%89%E3%80%8B/</url>
+    <content><![CDATA[<p>b站链接：<a href="https://www.bilibili.com/video/BV1NF411S7DS/">https://www.bilibili.com/video/BV1NF411S7DS/</a><br>跟随尚硅谷的Java项目实操学习。本文章记录学习笔记和开发过程中遇到的问题。</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>SpringBoot</tag>
+        <tag>SpringCloud</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于hexo的next主题个人博客的相关设置和美化（tbc）</title>
     <url>/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<p>记录博客的优化和美化。</p>
 <span id="more"></span>
 
 <h2 id="next主题"><a href="#next主题" class="headerlink" title="next主题"></a>next主题</h2><p>next官网仓库：<a href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a><br>next使用文档：<a href="https://theme-next.iissnan.com/getting-started.html">https://theme-next.iissnan.com/getting-started.html</a></p>
+<h3 id="自定义css"><a href="#自定义css" class="headerlink" title="自定义css"></a>自定义css</h3><p>在目前的next版本中，\themes\next\source\css_custom已经被删除，要自定义css样式可以在\themes\next\_config.yml中增加设置：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/style.png" alt="图片"><br>然后将自定义css放在source&#x2F;_data&#x2F;styles.styl中即可</p>
 <h3 id="侧边栏scheme的选择"><a href="#侧边栏scheme的选择" class="headerlink" title="侧边栏scheme的选择"></a>侧边栏scheme的选择</h3><p>主题配置文件_config.yml中，修改scheme</p>
 <p><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/scheme.png" alt="图片"><br>本博客使用的是Pisces双栏主题。</p>
 <h3 id="头像"><a href="#头像" class="headerlink" title="头像"></a>头像</h3><p>将头像放在theme&#x2F;next&#x2F;source&#x2F;images&#x2F; 路径中，并在主题配置文件_config.yml中，修改字段avatar为avatar: &#x2F;images&#x2F;avatar_name.png</p>
-<h2 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h2><h3 id="文章内配色"><a href="#文章内配色" class="headerlink" title="文章内配色"></a>文章内配色</h3><h3 id="标题颜色"><a href="#标题颜色" class="headerlink" title="标题颜色"></a>标题颜色</h3><h3 id="标题美化"><a href="#标题美化" class="headerlink" title="标题美化"></a>标题美化</h3><h3 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h3><h2 id="功能类"><a href="#功能类" class="headerlink" title="功能类"></a>功能类</h2><h3 id="启用分类-标签"><a href="#启用分类-标签" class="headerlink" title="启用分类&#x2F;标签"></a>启用分类&#x2F;标签</h3><h4 id="添加tags页面"><a href="#添加tags页面" class="headerlink" title="添加tags页面"></a>添加tags页面</h4><p>在博客根目录下执行</p>
+<h2 id="功能类"><a href="#功能类" class="headerlink" title="功能类"></a>功能类</h2><h3 id="启用分类-标签"><a href="#启用分类-标签" class="headerlink" title="启用分类&#x2F;标签"></a>启用分类&#x2F;标签</h3><h4 id="添加tags页面"><a href="#添加tags页面" class="headerlink" title="添加tags页面"></a>添加tags页面</h4><p>在博客根目录下执行</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
 
 <p>将这个page的类型设置为tags</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">标签</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2023-8</span><span class="number">-20</span> <span class="number">12</span><span class="string">:39:04</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="在主页菜单中添加跳转链接"><a href="#在主页菜单中添加跳转链接" class="headerlink" title="在主页菜单中添加跳转链接"></a>在主页菜单中添加跳转链接</h4><p>编辑主题配置文件_config.yml，将tags添加到menu中。<br><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/menu.png" alt="图片"></p>
-<h3 id="阅读次数"><a href="#阅读次数" class="headerlink" title="阅读次数"></a>阅读次数</h3><h3 id="字数统计和阅读时长"><a href="#字数统计和阅读时长" class="headerlink" title="字数统计和阅读时长"></a>字数统计和阅读时长</h3><p><small><small>装这个hexo-wordcount的时候报错了好几天，一直没解决，还以为是npm有问题。<br>某天突然发现文档<a href="https://hexo-next.readthedocs.io/zh_CN/latest/next/advanced/%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1/">hexo-next字数统计</a>里的相关阅读链接指向的是hexo-symbols-count-time，试着装了一下，完美运行。。</small></small></p>
+<h3 id="阅读次数"><a href="#阅读次数" class="headerlink" title="阅读次数"></a>阅读次数</h3><h3 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h3><p>在next_config.yml中修改toc相关<br><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/toc.png" alt="图片"></p>
+<h3 id="字数统计和阅读时长"><a href="#字数统计和阅读时长" class="headerlink" title="字数统计和阅读时长"></a>字数统计和阅读时长</h3><p><small><small>装这个hexo-wordcount的时候报错了好几天，一直没解决，还以为是npm有问题。<br>某天突然发现文档<a href="https://hexo-next.readthedocs.io/zh_CN/latest/next/advanced/%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1/">hexo-next字数统计</a>里的相关阅读链接指向的是hexo-symbols-count-time，试着装了一下，完美运行。。</small></small></p>
 <p>插件主页：<a href="https://github.com/theme-next/hexo-symbols-count-time">hexo-symbols-count-time</a></p>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>1.安装<strong>插件</strong></p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time</span><br></pre></td></tr></table></figure>
@@ -264,6 +353,23 @@
 <p>参数awl-平均字节长度，中文推荐2，英文推荐5；<br>参数wpm每分钟阅读字数，中文推荐300。</p>
 <p>3.修改<strong>主题配置文件_config.yml</strong></p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="主页文章按更新时间排序（坑）"><a href="#主页文章按更新时间排序（坑）" class="headerlink" title="主页文章按更新时间排序（坑）"></a>主页文章按更新时间排序（坑）</h3><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>插件主页：<a href="https://github.com/hexojs/hexo-generator-index">https://github.com/hexojs/hexo-generator-index</a></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-generator-index</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h2><h3 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h3><p>首先next的色彩变量记录在文件.\themes\next\source\css_variables\base.styl中。<br>这个文件中也记录了各种显示的基本设置。</p>
+<p>类似 var(–link-color) 语法的使用，可以在.\themes\next\source\css_variables_colors.styl中找到对应的自定义变量。var（）是css中为了应用自定义属性的语法。</p>
+<h3 id="标题美化"><a href="#标题美化" class="headerlink" title="标题美化"></a>标题美化</h3><p>在文件blog\source_data\styles.styl中添加</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">文章标题字体</span></span><br><span class="line"><span class="string">.posts-expand</span> <span class="string">.post-title</span> &#123;</span><br><span class="line">    <span class="attr">color:</span> <span class="comment">#555; </span></span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">32px;</span></span><br><span class="line">    <span class="attr">font-weight:</span> <span class="number">700</span><span class="string">;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="string">//</span> <span class="string">文章内标题样式（左边的竖线）</span></span><br><span class="line"><span class="string">.post-body</span> <span class="string">h2,</span> <span class="string">.post-body</span> <span class="string">h3,</span> <span class="string">.post-body</span> <span class="string">h4,</span> <span class="string">.post-body</span> <span class="string">h5,</span> <span class="string">.post-body</span> <span class="string">h6</span> &#123;</span><br><span class="line">    <span class="attr">border-left:</span> <span class="string">4px</span> <span class="string">solid</span> <span class="comment">#8F85B0;</span></span><br><span class="line">    <span class="attr">margin-left:</span> <span class="string">-40px;</span></span><br><span class="line">    <span class="attr">padding-left:</span> <span class="string">32px;</span></span><br><span class="line">	  <span class="attr">border-bottom:</span> <span class="string">none;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="string">//</span> <span class="string">二级标题(正常显示器分辨率)</span></span><br><span class="line"><span class="string">//</span> <span class="string">其实要在左下角和右下角加上一个折角、翻折的效果（一个三角形）</span></span><br><span class="line"><span class="string">.post-body</span> <span class="string">h2</span> &#123;</span><br><span class="line">    <span class="attr">padding-left:</span> <span class="number">1.7</span><span class="string">%;</span></span><br><span class="line">    <span class="attr">color:</span> <span class="comment">#5e5285; //#36304D;</span></span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">30px;</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">relative;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="string">//</span> <span class="string">三级标题</span></span><br><span class="line"><span class="string">.post-body</span> <span class="string">h3</span> &#123;</span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">23px;</span></span><br><span class="line">    <span class="attr">border-bottom:</span> <span class="string">1px</span> <span class="string">solid</span> <span class="comment">#403660;</span></span><br><span class="line">    <span class="attr">padding-bottom:</span> <span class="number">0.</span><span class="string">3em;</span></span><br><span class="line">    <span class="attr">color:</span> <span class="comment">#8476B0;</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">relative;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="string">//</span> <span class="string">四级标题</span></span><br><span class="line"><span class="string">.post-body</span> <span class="string">h4</span> &#123;</span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">20px;</span></span><br><span class="line">    <span class="attr">color:</span> <span class="comment">#A298C5;</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">relative;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>要启用如上的自定义css样式，需要在config中开启。务必参照上面的自定义css部分。</p>
+<h3 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h3><p>next_config.yml中搜索font，改为true。<br><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/font.png" alt="图片"></p>
+<h3 id="文章目录美化"><a href="#文章目录美化" class="headerlink" title="文章目录美化"></a>文章目录美化</h3><h4 id="改色"><a href="#改色" class="headerlink" title="改色"></a>改色</h4><p>themes\next\source\css_variables\base.styl中$orange改成$mauve;<br>（因为没找到文章目录css在哪里改，只发现orange变量只涉及到目录颜色。直接改了就行了。）</p>
+<h4 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h4><p>next\source\css_common\outline\sidebar\sidebar-toc.styl</p>
+<h3 id="搜索内关键词高亮"><a href="#搜索内关键词高亮" class="headerlink" title="搜索内关键词高亮"></a>搜索内关键词高亮</h3><p>\themes\next\source\css_common\components\third-party\search.styl中修改</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">mark.search-keyword</span> &#123;</span><br><span class="line">  <span class="attr">background:</span> <span class="string">transparent;</span></span><br><span class="line">  <span class="attr">border-bottom:</span> <span class="string">1px</span> <span class="string">dashed</span> <span class="string">$mauve</span> <span class="string">;</span>  <span class="string">//</span> <span class="string">关键词下方点虚线颜色</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">$mauve</span> <span class="string">;</span> <span class="string">//</span> <span class="string">关键词颜色</span></span><br><span class="line">  <span class="attr">font-weight:</span> <span class="string">bold;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="分类页面中的优化"><a href="#分类页面中的优化" class="headerlink" title="分类页面中的优化"></a>分类页面中的优化</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">.category-list-count</span> &#123;  <span class="string">//</span> <span class="string">分类计数颜色</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">$mauve;</span></span><br><span class="line"></span><br><span class="line">  <span class="string">&amp;::before</span> &#123; <span class="string">//</span> <span class="string">计数左右的符号</span></span><br><span class="line">    <span class="attr">content:</span> <span class="string">&#x27; (&#x27;</span><span class="string">;</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="string">&amp;::after</span> &#123;</span><br><span class="line">    <span class="attr">content:</span> <span class="string">&#x27;) &#x27;</span><span class="string">;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="string">.category-list-child</span> &#123; <span class="string">//</span> <span class="string">子分类缩进</span></span><br><span class="line">  <span class="attr">padding-left:</span> <span class="string">20px;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="markdown"><a href="#markdown" class="headerlink" title="markdown"></a>markdown</h2><h3 id="中文首行缩进"><a href="#中文首行缩进" class="headerlink" title="中文首行缩进"></a>中文首行缩进</h3><p>在行前添加两个&ensp;转义字符。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&amp;ensp;</span><span class="symbol">&amp;ensp;</span></span><br></pre></td></tr></table></figure>
@@ -311,90 +417,6 @@
         <tag>acwing</tag>
         <tag>算法</tag>
         <tag>基础算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于SpringBoot+SpringCloud的尚硅谷Java项目《尚品甄选》</title>
-    <url>/2024/02/12/%E5%9F%BA%E4%BA%8ESpringBoot-SpringCloud%E7%9A%84%E5%B0%9A%E7%A1%85%E8%B0%B7Java%E9%A1%B9%E7%9B%AE%E3%80%8A%E5%B0%9A%E5%93%81%E7%94%84%E9%80%89%E3%80%8B/</url>
-    <content><![CDATA[<p>b站链接：<a href="https://www.bilibili.com/video/BV1NF411S7DS/">https://www.bilibili.com/video/BV1NF411S7DS/</a><br>跟随尚硅谷的Java项目实操学习。本文章记录学习笔记和开发过程中遇到的问题。</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>SpringBoot</tag>
-        <tag>SpringCloud</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《Blue Eye Samurai 蓝眼武士》</title>
-    <url>/2024/02/15/%E3%80%8ABlue-Eye-Samurai-%E8%93%9D%E7%9C%BC%E6%AD%A6%E5%A3%AB%E3%80%8B/</url>
-    <content><![CDATA[<p>讲述日本江户时代时期，混血儿武士阿水复仇和觉醒之路。</p>
-<p>本来以为只是单纯的复仇打斗片，但本故事想讲的并不仅仅如此。<br>除了女扮男装的武士阿水，本片中另一个重要女角色公主也极大的展现了该片想表达的主题观点。我认为这其实是一部探索自我、女性解放的优秀作品。</p>
-<span id="more"></span>
-
-<h2 id="探索自我"><a href="#探索自我" class="headerlink" title="探索自我"></a>探索自我</h2><p>阿水的复仇之路也可以说是其本身对自己身份的探索过程。<br>身为出生在闭关锁国时期的日本，阿水混血儿的身份并不能让她自己产生共鸣，更使得她自己对自己的身份、对白人父亲产生厌恶，她将自己的妓女母亲奉为生存的支柱，直到居住的木屋被他人烧毁。但养她长大的妓女是否是其真正的母亲，我们也无从得知，片尾也对此留了一点悬念。</p>
-<p>阿水遇到的盲眼老人、铸剑师永治，是锚定她身份转变的一个重要人物。我认为永治大师锚定了阿水身份转变的两个重要节点：一是阿水从妓女母亲身边脱离，成为一名铸剑学徒，在永治大师身边偷偷学习顾客的武士道，同时也为阿水的复仇之路埋下种子。二是阿水在复仇迷茫之际，永治大师为其指引了她真正该追寻的方向，追寻自己与自己的和解，追寻万物之间的平和。</p>
-<p>值得一提的是本片中的一个重要剧情：阿水在复仇途中被仇恨蒙蔽双眼，使得剑断重伤战败。当她再次试图重新铸剑时，却屡屡失败。最终阿水在身上写上心经，融合了铃铛、永治大师的工具（我认为这也预示着阿水将自己的经历化为己有，真正回顾自己走过的路，而不是除了仇恨看不到其他事物），最终重新铸就了一把合适的武士刀。</p>
-<p>武士刀的练就代表着阿水本身人格的铸就，从最初的毫无杂质（只有仇恨）到融合了其他金属的最终形态（阿水的经历、老师、徒弟），为阿水的胜利带来曙光。</p>
-<h2 id="女性解放"><a href="#女性解放" class="headerlink" title="女性解放"></a>女性解放</h2><p>本片另一个女性角色公主在推动女性解放议题上起了重要作用。最初依靠父亲、到逃婚追逐真爱、到逐渐觉醒追寻到自己想做的事、以及结尾暗示的公主将借助自己的丈夫干涉国家政治成为伟人。</p>
-<p>公主作为一个在温室长大的女儿，在父亲的庇护下享尽了荣华富贵。当然她也只是她父亲的一枚棋子而已——长大之后，必须遵从父亲的命令嫁给他人。公主此时已有了心上人，她决定在成婚前寻找为了洗去屈辱而追逐阿水的泰源。<br>中途公主借助妓院来到了泰源所在地，也在这里找到了阿水。而父亲派来的追兵最终将公主带了回去。<br>公主迷茫之际，再次遇到从妓院来庆祝公主婚礼的一帮朋友，也在此公主意识到她自己的力量是无穷的，即使她在公众面上无法出面，她却可以通过甜言蜜语借助自己的丈夫做到自己想做的事情。</p>
-<p>至此，公主从一个天真烂漫的女孩长大成为了有手段有目的的女人。</p>
-]]></content>
-      <categories>
-        <category>影视</category>
-      </categories>
-      <tags>
-        <tag>影视</tag>
-        <tag>观后感</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在vscode中配置java</title>
-    <url>/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/</url>
-    <content><![CDATA[<p>在vscode里配置jdk。</p>
-<span id="more"></span>
-
-<h2 id="jdk下载和配置"><a href="#jdk下载和配置" class="headerlink" title="jdk下载和配置"></a>jdk下载和配置</h2><p>jdk下载网站：<a href="https://www.oracle.com/java/technologies/downloads/#jdk21-windows">https://www.oracle.com/java/technologies/downloads/#jdk21-windows</a><br>注意要下windows版本，不要下错成其他版本了。。</p>
-<p>下面是经典的系统变量配置：<br>1.添加系统变量JAVA_HOME: D:\Program\jdk\jdk-21<br>2.在系统变量Path中新建添加：D:\Program\jdk\jdk-21\bin</p>
-<h2 id="vscode配置"><a href="#vscode配置" class="headerlink" title="vscode配置"></a>vscode配置</h2><h3 id="插件下载"><a href="#插件下载" class="headerlink" title="插件下载"></a>插件下载</h3><p>插件商店搜索并下载Extension Pack for Java<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/extension.png" alt="图片"></p>
-<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>在vscode设置中搜索java.home，并将java.home的路径设置为jdk目录<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/jdk.png" alt="图片"></p>
-<p>然后就ok了，随便试一下吧。</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2024年看过的作品</title>
-    <url>/2024/03/01/2024%E5%B9%B4%E7%9C%8B%E8%BF%87%E7%9A%84%E4%BD%9C%E5%93%81/</url>
-    <content><![CDATA[<p>包含动画、影视、书籍等</p>
-<span id="more"></span>
-
-<h2 id="2月"><a href="#2月" class="headerlink" title="2月"></a>2月</h2><p>动画 蓝眼武士 8</p>
-<div class="note default"><p>不错的网飞动画，也充斥着白人对武士道的刻板印象。写了观后感，可以看<a href="/2024/02/15/%E3%80%8ABlue-Eye-Samurai-%E8%93%9D%E7%9C%BC%E6%AD%A6%E5%A3%AB%E3%80%8B/" title="《Blue Eye Samurai 蓝眼武士》">《蓝眼武士》观后感</a> (md default supported) </p>
-</div>
-
-<p>美剧 剧版 史密斯夫妇 6</p>
-<div class="note default"><p>无功无过..网上评价很高，但是我自己集中不了精神观赏 (md default supported) </p>
-</div>
-
-<p>动画电影 镜之孤城 7.5</p>
-<div class="note default"><p>反对校园暴力的主题，将七个不同时间线的角色并联起来的故事。碍于电影时长除了女主以外的角色刻画都不是很够，但我觉得挺不错的。 (md default supported) </p>
-</div>
-
-<h2 id="3月"><a href="#3月" class="headerlink" title="3月"></a>3月</h2><p>动画电影 通往夏天的隧道，再见的出口 6.5</p>
-<div class="note default"><p>一个半小时的纯爱电影，也是碍于电影时长省略了很多细节。歌不错。男主找回了爱人和被爱的权利。 (md default supported) </p>
-</div>]]></content>
-      <categories>
-        <category>文艺作品</category>
-      </categories>
-      <tags>
-        <tag>观后感</tag>
       </tags>
   </entry>
 </search>

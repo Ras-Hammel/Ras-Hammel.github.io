@@ -173,7 +173,7 @@ template {
   display: none;
 }
 ::selection {
-  background: #262a30;
+  background: #5e5285;
   color: #eee;
 }
 html,
@@ -203,22 +203,22 @@ h6 {
   margin: 30px 0 15px;
 }
 h1 {
-  font-size: 1.5em;
+  font-size: 1.875em;
 }
 h2 {
-  font-size: 1.375em;
+  font-size: 1.75em;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 1.625em;
 }
 h4 {
-  font-size: 1.125em;
+  font-size: 1.5em;
 }
 h5 {
-  font-size: 1em;
+  font-size: 1.375em;
 }
 h6 {
-  font-size: 0.875em;
+  font-size: 1.25em;
 }
 p {
   margin: 0 0 20px;
@@ -1350,7 +1350,7 @@ pre code {
   text-align: left;
 }
 .post-toc ol > :last-child {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 .post-toc ol > ol {
   padding-left: 0;
@@ -1363,20 +1363,6 @@ pre code {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.post-toc .nav .nav-child {
-  --height: 0;
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition-property: height, opacity, visibility;
-  transition: 0.2s ease-in-out;
-  visibility: hidden;
-}
-.post-toc .nav .active > .nav-child {
-  height: var(--height, auto);
-  opacity: 1;
-  visibility: unset;
 }
 .post-toc .nav .active > a {
   border-bottom-color: #a786c2;
@@ -2040,7 +2026,7 @@ pre code {
   margin: 5px 10px;
 }
 .category-all-page .category-list-count {
-  color: #bbb;
+  color: #a786c2;
 }
 .category-all-page .category-list-count::before {
   content: ' (';
@@ -2049,7 +2035,7 @@ pre code {
   content: ') ';
 }
 .category-all-page .category-list-child {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .event-list hr {
   background: #222;
@@ -2313,8 +2299,8 @@ ul.breadcrumb li:last-child {
 }
 mark.search-keyword {
   background: transparent;
-  border-bottom: 1px dashed #ff2a2a;
-  color: #ff2a2a;
+  border-bottom: 1px dashed #a786c2;
+  color: #a786c2;
   font-weight: bold;
 }
 .use-motion .animated {
@@ -2592,8 +2578,8 @@ header.header {
   padding: 0;
 }
 .posts-expand .post-title {
-  color: #36304d;
-  font-size: 30px;
+  color: #555;
+  font-size: 32px;
   font-weight: 700;
 }
 .post-body h2,
@@ -2608,8 +2594,8 @@ header.header {
 }
 .post-body h2 {
   padding-left: 1.7%;
-  color: #36304d;
-  font-size: 26px;
+  color: #5e5285;
+  font-size: 30px;
   position: relative;
 }
 .post-body h3 {
