@@ -68,6 +68,10 @@
 <h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="新建一篇博文new"><a href="#新建一篇博文new" class="headerlink" title="新建一篇博文new"></a>新建一篇博文new</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> [<span class="string">layout</span>] <span class="string">&lt;title&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>如果title包含空格，请使用双引号括起来。</p>
+<p>Hexo 有三种默认布局：post、page 和 draft。在<br>创建这三种不同类型的文件时，它们将会被保存到不同的路径；<br>而自定义的其他布局和 post 相同，都将储存到 source&#x2F;_posts 文件夹。</p>
+<h4 id="draft草稿"><a href="#draft草稿" class="headerlink" title="draft草稿"></a>draft草稿</h4><p>这种布局在建立时会被保存到 source&#x2F;_drafts 文件夹，可以通过 publish 命令将草稿移动到 source&#x2F;_posts 文件夹，也可在命令中指定 layout 来指定布局。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">publish</span> [<span class="string">layout</span>] <span class="string">&lt;title&gt;</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="生成静态文件generate"><a href="#生成静态文件generate" class="headerlink" title="生成静态文件generate"></a>生成静态文件generate</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">g</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="部署deploy"><a href="#部署deploy" class="headerlink" title="部署deploy"></a>部署deploy</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure>
@@ -343,6 +347,53 @@
       </categories>
       <tags>
         <tag>影视</tag>
+        <tag>观后感</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在vscode中配置java</title>
+    <url>/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/</url>
+    <content><![CDATA[<p>在vscode里配置jdk。</p>
+<span id="more"></span>
+
+<h2 id="jdk下载和配置"><a href="#jdk下载和配置" class="headerlink" title="jdk下载和配置"></a>jdk下载和配置</h2><p>jdk下载网站：<a href="https://www.oracle.com/java/technologies/downloads/#jdk21-windows">https://www.oracle.com/java/technologies/downloads/#jdk21-windows</a><br>注意要下windows版本，不要下错成其他版本了。。</p>
+<p>下面是经典的系统变量配置：<br>1.添加系统变量JAVA_HOME: D:\Program\jdk\jdk-21<br>2.在系统变量Path中新建添加：D:\Program\jdk\jdk-21\bin</p>
+<h2 id="vscode配置"><a href="#vscode配置" class="headerlink" title="vscode配置"></a>vscode配置</h2><h3 id="插件下载"><a href="#插件下载" class="headerlink" title="插件下载"></a>插件下载</h3><p>插件商店搜索并下载Extension Pack for Java<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/extension.png" alt="图片"></p>
+<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>在vscode设置中搜索java.home，并将java.home的路径设置为jdk目录<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/jdk.png" alt="图片"></p>
+<p>然后就ok了，随便试一下吧。</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2024年看过的作品</title>
+    <url>/2024/03/01/2024%E5%B9%B4%E7%9C%8B%E8%BF%87%E7%9A%84%E4%BD%9C%E5%93%81/</url>
+    <content><![CDATA[<p>包含动画、影视、书籍等</p>
+<span id="more"></span>
+
+<h2 id="2月"><a href="#2月" class="headerlink" title="2月"></a>2月</h2><p>动画 蓝眼武士 8</p>
+<div class="note default"><p>不错的网飞动画，也充斥着白人对武士道的刻板印象。写了观后感，可以看<a href="/2024/02/15/%E3%80%8ABlue-Eye-Samurai-%E8%93%9D%E7%9C%BC%E6%AD%A6%E5%A3%AB%E3%80%8B/" title="《Blue Eye Samurai 蓝眼武士》">《蓝眼武士》观后感</a> (md default supported) </p>
+</div>
+
+<p>美剧 剧版 史密斯夫妇 6</p>
+<div class="note default"><p>无功无过..网上评价很高，但是我自己集中不了精神观赏 (md default supported) </p>
+</div>
+
+<p>动画电影 镜之孤城 7.5</p>
+<div class="note default"><p>反对校园暴力的主题，将七个不同时间线的角色并联起来的故事。碍于电影时长除了女主以外的角色刻画都不是很够，但我觉得挺不错的。 (md default supported) </p>
+</div>
+
+<h2 id="3月"><a href="#3月" class="headerlink" title="3月"></a>3月</h2><p>动画电影 通往夏天的隧道，再见的出口 6.5</p>
+<div class="note default"><p>一个半小时的纯爱电影，也是碍于电影时长省略了很多细节。歌不错。男主找回了爱人和被爱的权利。 (md default supported) </p>
+</div>]]></content>
+      <categories>
+        <category>文艺作品</category>
+      </categories>
+      <tags>
         <tag>观后感</tag>
       </tags>
   </entry>
