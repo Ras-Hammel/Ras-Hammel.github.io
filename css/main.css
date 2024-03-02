@@ -2582,28 +2582,25 @@ header.header {
   font-size: 32px;
   font-weight: 700;
 }
-.post-body h2,
-.post-body h3,
-.post-body h4,
-.post-body h5,
-.post-body h6 {
-  border-left: 4px solid #8f85b0;
-  margin-left: -40px;
-  padding-left: 32px;
-  border-bottom: none;
-}
 .post-body h2 {
   padding-left: 1.7%;
   color: #5e5285;
   font-size: 30px;
   position: relative;
+  border-bottom: 1px solid #5e5285;
+  border-left: 4px solid #5e5285;
+  margin-left: -40px;
+  padding-left: 32px;
 }
 .post-body h3 {
   font-size: 23px;
-  border-bottom: 1px solid #403660;
+  border-bottom: 1px dotted #8476b0;
   padding-bottom: 0.3em;
   color: #8476b0;
   position: relative;
+  border-left: 4px solid #8476b0;
+  margin-left: -40px;
+  padding-left: 32px;
 }
 .post-body h4 {
   font-size: 20px;
