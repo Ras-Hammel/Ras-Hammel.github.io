@@ -29,24 +29,6 @@
       </tags>
   </entry>
   <entry>
-    <title>github的使用</title>
-    <url>/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<img src="/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/git%E6%B5%81%E7%A8%8B%E5%9B%BE.png" class="">
-<span id="more"></span>
-
-<h2 id="克隆远程仓库到本地"><a href="#克隆远程仓库到本地" class="headerlink" title="克隆远程仓库到本地"></a>克隆远程仓库到本地</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/Repository_name.git</span><br></pre></td></tr></table></figure>
-
-<h2 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h2><p>进入本地仓库文件夹中</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd Repository_name</span><br></pre></td></tr></table></figure>
-
-<p>然后执行：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add . # 把仓库文件夹工作区下面的文件都添加进暂存区</span><br><span class="line">git commit -m &quot;提交信息&quot; # 将暂存区中的内容提交到本体仓库</span><br><span class="line">git push -u origin master  # 将本地仓库的内容推送到远程仓库上</span><br></pre></td></tr></table></figure>
-
-<h2 id="fork"><a href="#fork" class="headerlink" title="fork"></a>fork</h2><p>看到一个挺不错的英语外刊杂志仓库<a href="https://github.com/hehonghui/awesome-english-ebooks">英语外刊杂志</a>，包含了经济学人、纽约客、卫报等杂志的内容，且包含epub、mobi和pdf格式，很适合现阶段我的英文阅读学习。</p>
-<p>刚好借此机会学习一下fork的使用，并保持与原仓库的同步。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Markdown的使用</title>
     <url>/2023/08/23/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>关于.md文档的语法和使用vscode编写.md的设置<br>官方教程：<a href="https://markdown.com.cn/">markdown官方教程</a></p>
@@ -88,6 +70,26 @@
 ]]></content>
   </entry>
   <entry>
+    <title>LeetCode-75-Java</title>
+    <url>/2024/03/03/LeetCode-75-Java/</url>
+    <content><![CDATA[<p>LeetCode 75 刷题记录，Java语言</p>
+<p>学习计划主页：<a href="https://leetcode.cn/studyplan/leetcode-75/">https://leetcode.cn/studyplan/leetcode-75/</a></p>
+<span id="more"></span>
+
+<h2 id="数组-字符串"><a href="#数组-字符串" class="headerlink" title="数组&#x2F;字符串"></a>数组&#x2F;字符串</h2><h3 id="1768-交替合并字符串"><a href="#1768-交替合并字符串" class="headerlink" title="1768.交替合并字符串"></a>1768.交替合并字符串</h3><h2 id="双指针"><a href="#双指针" class="headerlink" title="双指针"></a>双指针</h2><h2 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h2><h2 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h2><h2 id="哈希表-哈希集合"><a href="#哈希表-哈希集合" class="headerlink" title="哈希表&#x2F;哈希集合"></a>哈希表&#x2F;哈希集合</h2><h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><h2 id="二叉树-深度优先搜索"><a href="#二叉树-深度优先搜索" class="headerlink" title="二叉树-深度优先搜索"></a>二叉树-深度优先搜索</h2><h2 id="二叉树-广度优先搜索"><a href="#二叉树-广度优先搜索" class="headerlink" title="二叉树-广度优先搜索"></a>二叉树-广度优先搜索</h2><h2 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a>二叉搜索树</h2><h2 id="图-深度优先搜索"><a href="#图-深度优先搜索" class="headerlink" title="图-深度优先搜索"></a>图-深度优先搜索</h2><h2 id="图-广度优先搜索"><a href="#图-广度优先搜索" class="headerlink" title="图-广度优先搜索"></a>图-广度优先搜索</h2><h2 id="堆-优先队列"><a href="#堆-优先队列" class="headerlink" title="堆&#x2F;优先队列"></a>堆&#x2F;优先队列</h2><h2 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h2><h2 id="回溯"><a href="#回溯" class="headerlink" title="回溯"></a>回溯</h2><h2 id="动态规划-一维"><a href="#动态规划-一维" class="headerlink" title="动态规划-一维"></a>动态规划-一维</h2><h2 id="动态规划-多维"><a href="#动态规划-多维" class="headerlink" title="动态规划-多维"></a>动态规划-多维</h2><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><h2 id="前缀树"><a href="#前缀树" class="headerlink" title="前缀树"></a>前缀树</h2><h2 id="区间集合"><a href="#区间集合" class="headerlink" title="区间集合"></a>区间集合</h2><h2 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h2>]]></content>
+      <categories>
+        <category>算法</category>
+        <category>LeetCode</category>
+        <category>Java</category>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《Blue Eye Samurai 蓝眼武士》</title>
     <url>/2024/02/15/%E3%80%8ABlue-Eye-Samurai-%E8%93%9D%E7%9C%BC%E6%AD%A6%E5%A3%AB%E3%80%8B/</url>
     <content><![CDATA[<p>讲述日本江户时代时期，混血儿武士阿水复仇和觉醒之路。</p>
@@ -109,6 +111,24 @@
         <tag>观后感</tag>
         <tag>影视</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>github的使用</title>
+    <url>/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<img src="/2023/08/23/github%E7%9A%84%E4%BD%BF%E7%94%A8/git%E6%B5%81%E7%A8%8B%E5%9B%BE.png" class="">
+<span id="more"></span>
+
+<h2 id="克隆远程仓库到本地"><a href="#克隆远程仓库到本地" class="headerlink" title="克隆远程仓库到本地"></a>克隆远程仓库到本地</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/Repository_name.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h2><p>进入本地仓库文件夹中</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd Repository_name</span><br></pre></td></tr></table></figure>
+
+<p>然后执行：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add . # 把仓库文件夹工作区下面的文件都添加进暂存区</span><br><span class="line">git commit -m &quot;提交信息&quot; # 将暂存区中的内容提交到本体仓库</span><br><span class="line">git push -u origin master  # 将本地仓库的内容推送到远程仓库上</span><br></pre></td></tr></table></figure>
+
+<h2 id="fork"><a href="#fork" class="headerlink" title="fork"></a>fork</h2><p>看到一个挺不错的英语外刊杂志仓库<a href="https://github.com/hehonghui/awesome-english-ebooks">英语外刊杂志</a>，包含了经济学人、纽约客、卫报等杂志的内容，且包含epub、mobi和pdf格式，很适合现阶段我的英文阅读学习。</p>
+<p>刚好借此机会学习一下fork的使用，并保持与原仓库的同步。</p>
+]]></content>
   </entry>
   <entry>
     <title>hexo博客的使用方法</title>
@@ -282,42 +302,9 @@
         <category>基础算法</category>
       </categories>
       <tags>
-        <tag>acwing</tag>
         <tag>算法</tag>
+        <tag>acwing</tag>
         <tag>基础算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在vscode中配置java</title>
-    <url>/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/</url>
-    <content><![CDATA[<p>在vscode里配置jdk。</p>
-<span id="more"></span>
-
-<h2 id="jdk下载和配置"><a href="#jdk下载和配置" class="headerlink" title="jdk下载和配置"></a>jdk下载和配置</h2><p>jdk下载网站：<a href="https://www.oracle.com/java/technologies/downloads/#jdk21-windows">https://www.oracle.com/java/technologies/downloads/#jdk21-windows</a><br>注意要下windows版本，不要下错成其他版本了。。</p>
-<p>下面是经典的系统变量配置：<br>1.添加系统变量JAVA_HOME: D:\Program\jdk\jdk-21<br>2.在系统变量Path中新建添加：D:\Program\jdk\jdk-21\bin</p>
-<h2 id="vscode配置"><a href="#vscode配置" class="headerlink" title="vscode配置"></a>vscode配置</h2><h3 id="插件下载"><a href="#插件下载" class="headerlink" title="插件下载"></a>插件下载</h3><p>插件商店搜索并下载Extension Pack for Java<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/extension.png" alt="图片"></p>
-<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>在vscode设置中搜索java.home，并将java.home的路径设置为jdk目录<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/jdk.png" alt="图片"></p>
-<p>然后就ok了，随便试一下吧。</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于SpringBoot+SpringCloud的尚硅谷Java项目《尚品甄选》</title>
-    <url>/2024/02/12/%E5%9F%BA%E4%BA%8ESpringBoot-SpringCloud%E7%9A%84%E5%B0%9A%E7%A1%85%E8%B0%B7Java%E9%A1%B9%E7%9B%AE%E3%80%8A%E5%B0%9A%E5%93%81%E7%94%84%E9%80%89%E3%80%8B/</url>
-    <content><![CDATA[<p>b站链接：<a href="https://www.bilibili.com/video/BV1NF411S7DS/">https://www.bilibili.com/video/BV1NF411S7DS/</a><br>跟随尚硅谷的Java项目实操学习。本文章记录学习笔记和开发过程中遇到的问题。</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>SpringBoot</tag>
-        <tag>SpringCloud</tag>
       </tags>
   </entry>
   <entry>
@@ -341,7 +328,7 @@
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">标签</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2023-8</span><span class="number">-20</span> <span class="number">12</span><span class="string">:39:04</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="在主页菜单中添加跳转链接"><a href="#在主页菜单中添加跳转链接" class="headerlink" title="在主页菜单中添加跳转链接"></a>在主页菜单中添加跳转链接</h4><p>编辑主题配置文件_config.yml，将tags添加到menu中。<br><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/menu.png" alt="图片"></p>
-<h3 id="阅读次数"><a href="#阅读次数" class="headerlink" title="阅读次数"></a>阅读次数</h3><h3 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h3><p>在next_config.yml中修改toc相关<br><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/toc.png" alt="图片"></p>
+<h3 id="阅读次数"><a href="#阅读次数" class="headerlink" title="阅读次数"></a>阅读次数</h3><h3 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h3><p>在next\_config.yml中修改toc相关<br><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/toc.png" alt="图片"></p>
 <h3 id="字数统计和阅读时长"><a href="#字数统计和阅读时长" class="headerlink" title="字数统计和阅读时长"></a>字数统计和阅读时长</h3><p><small><small>装这个hexo-wordcount的时候报错了好几天，一直没解决，还以为是npm有问题。<br>某天突然发现文档<a href="https://hexo-next.readthedocs.io/zh_CN/latest/next/advanced/%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1/">hexo-next字数统计</a>里的相关阅读链接指向的是hexo-symbols-count-time，试着装了一下，完美运行。。</small></small></p>
 <p>插件主页：<a href="https://github.com/theme-next/hexo-symbols-count-time">hexo-symbols-count-time</a></p>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>1.安装<strong>插件</strong></p>
@@ -360,16 +347,17 @@
 <p>修改文件node_modules\hexo-generator-index\lib\generator.js</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> pagination = <span class="built_in">require</span>(<span class="string">&#x27;hexo-pagination&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = <span class="keyword">function</span>(<span class="params">locals</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> config = <span class="variable language_">this</span>.<span class="property">config</span>;</span><br><span class="line">  <span class="keyword">const</span> posts = locals.<span class="property">posts</span>.<span class="title function_">sort</span>(config.<span class="property">index_generator</span>.<span class="property">order_by</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// posts.data.sort((a, b) =&gt; (b.sticky || 0) - (a.sticky || 0));</span></span><br><span class="line"></span><br><span class="line">  posts.<span class="property">data</span> = posts.<span class="property">data</span>.<span class="title function_">sort</span>(<span class="keyword">function</span> (<span class="params">a, b</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (a.<span class="property">sticky</span> &amp;&amp; b.<span class="property">sticky</span>) &#123; <span class="comment">// 当两篇文章top都有定义时</span></span><br><span class="line">        <span class="keyword">if</span> (a.<span class="property">sticky</span> == b.<span class="property">sticky</span>) <span class="keyword">return</span> b.<span class="property">updated</span> - a.<span class="property">updated</span>; <span class="comment">// 若top值一样，则按照文章更新日期降序排列</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> b.<span class="property">sticky</span> - a.<span class="property">sticky</span>; <span class="comment">// 否则按照top值降序排列</span></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (a.<span class="property">sticky</span> &amp;&amp; !b.<span class="property">sticky</span>) &#123; <span class="comment">// 以下两种情况是若只有一篇文章top有定义，则将有top的排在前面（这里用异或操作居然不行233）</span></span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (!a.<span class="property">sticky</span> &amp;&amp; b.<span class="property">sticky</span>) &#123; <span class="comment">//上一条已解释</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">return</span> b.<span class="property">updated</span> - a.<span class="property">updated</span>; <span class="comment">// 若都没定义，则按照文章更新日期降序排列</span></span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> paginationDir = config.<span class="property">pagination_dir</span> || <span class="string">&#x27;page&#x27;</span>;</span><br><span class="line">  <span class="keyword">const</span> path = config.<span class="property">index_generator</span>.<span class="property">path</span> || <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">pagination</span>(path, posts, &#123;</span><br><span class="line">    <span class="attr">perPage</span>: config.<span class="property">index_generator</span>.<span class="property">per_page</span>,</span><br><span class="line">    <span class="attr">layout</span>: [<span class="string">&#x27;index&#x27;</span>, <span class="string">&#x27;archive&#x27;</span>],</span><br><span class="line">    <span class="attr">format</span>: paginationDir + <span class="string">&#x27;/%d/&#x27;</span>,</span><br><span class="line">    <span class="attr">data</span>: &#123;</span><br><span class="line">      <span class="attr">__index</span>: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<h2 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h2><h3 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h3><p>首先next的色彩变量记录在文件.\themes\next\source\css_variables\base.styl中。<br>这个文件中也记录了各种显示的基本设置。</p>
-<p>类似 var(–link-color) 语法的使用，可以在.\themes\next\source\css_variables_colors.styl中找到对应的自定义变量。var（）是css中为了应用自定义属性的语法。</p>
-<h3 id="标题美化"><a href="#标题美化" class="headerlink" title="标题美化"></a>标题美化</h3><p>在文件blog\source_data\styles.styl中添加</p>
+<h2 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h2><h3 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h3><p>首先next的色彩变量记录在文件.\themes\next\source\css\_variables\base.styl中。<br>这个文件中也记录了各种显示的基本设置。</p>
+<p>类似 var(–link-color) 语法的使用，可以在.\themes\next\source\css\_variables\_colors.styl中找到对应的自定义变量。var（）是css中为了应用自定义属性的语法。</p>
+<h3 id="标题美化"><a href="#标题美化" class="headerlink" title="标题美化"></a>标题美化</h3><p>在文件blog\source\_data\styles.styl中添加</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">文章标题字体</span></span><br><span class="line"><span class="string">.posts-expand</span> <span class="string">.post-title</span> &#123;</span><br><span class="line">    <span class="attr">color:</span> <span class="comment">#555; </span></span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">32px;</span></span><br><span class="line">    <span class="attr">font-weight:</span> <span class="number">700</span><span class="string">;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="string">//</span> <span class="string">文章内标题样式（左边的竖线）</span></span><br><span class="line"><span class="string">.post-body</span> <span class="string">h2,</span> <span class="string">.post-body</span> <span class="string">h3,</span> <span class="string">.post-body</span> <span class="string">h4,</span> <span class="string">.post-body</span> <span class="string">h5,</span> <span class="string">.post-body</span> <span class="string">h6</span> &#123;</span><br><span class="line">    <span class="attr">border-left:</span> <span class="string">4px</span> <span class="string">solid</span> <span class="comment">#8F85B0;</span></span><br><span class="line">    <span class="attr">margin-left:</span> <span class="string">-40px;</span></span><br><span class="line">    <span class="attr">padding-left:</span> <span class="string">32px;</span></span><br><span class="line">	  <span class="attr">border-bottom:</span> <span class="string">none;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="string">//</span> <span class="string">二级标题(正常显示器分辨率)</span></span><br><span class="line"><span class="string">//</span> <span class="string">其实要在左下角和右下角加上一个折角、翻折的效果（一个三角形）</span></span><br><span class="line"><span class="string">.post-body</span> <span class="string">h2</span> &#123;</span><br><span class="line">    <span class="attr">padding-left:</span> <span class="number">1.7</span><span class="string">%;</span></span><br><span class="line">    <span class="attr">color:</span> <span class="comment">#5e5285; //#36304D;</span></span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">30px;</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">relative;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="string">//</span> <span class="string">三级标题</span></span><br><span class="line"><span class="string">.post-body</span> <span class="string">h3</span> &#123;</span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">23px;</span></span><br><span class="line">    <span class="attr">border-bottom:</span> <span class="string">1px</span> <span class="string">solid</span> <span class="comment">#403660;</span></span><br><span class="line">    <span class="attr">padding-bottom:</span> <span class="number">0.</span><span class="string">3em;</span></span><br><span class="line">    <span class="attr">color:</span> <span class="comment">#8476B0;</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">relative;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="string">//</span> <span class="string">四级标题</span></span><br><span class="line"><span class="string">.post-body</span> <span class="string">h4</span> &#123;</span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">20px;</span></span><br><span class="line">    <span class="attr">color:</span> <span class="comment">#A298C5;</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">relative;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>要启用如上的自定义css样式，需要在config中开启。务必参照上面的自定义css部分。</p>
-<h3 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h3><p>next_config.yml中搜索font，改为true。<br><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/font.png" alt="图片"></p>
-<h3 id="文章目录美化"><a href="#文章目录美化" class="headerlink" title="文章目录美化"></a>文章目录美化</h3><h4 id="改色"><a href="#改色" class="headerlink" title="改色"></a>改色</h4><p>themes\next\source\css_variables\base.styl中$orange改成$mauve;<br>（因为没找到文章目录css在哪里改，只发现orange变量只涉及到目录颜色。直接改了就行了。）</p>
-<h4 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h4><p>next\source\css_common\outline\sidebar\sidebar-toc.styl</p>
-<h3 id="搜索内关键词高亮"><a href="#搜索内关键词高亮" class="headerlink" title="搜索内关键词高亮"></a>搜索内关键词高亮</h3><p>\themes\next\source\css_common\components\third-party\search.styl中修改</p>
+<h3 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h3><p>next\_config.yml中搜索font，改为true。<br><img src="/2023/08/21/%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96/font.png" alt="图片"></p>
+<h3 id="文章目录美化"><a href="#文章目录美化" class="headerlink" title="文章目录美化"></a>文章目录美化</h3><h4 id="改色"><a href="#改色" class="headerlink" title="改色"></a>改色</h4><p>themes\next\source\css\_variables\base.styl中$orange改成$mauve;<br>（因为没找到文章目录css在哪里改，只发现orange变量只涉及到目录颜色。直接改了就行了。）</p>
+<p>后增：推测可能在布局文件themes\next\source\css_variables\Pisces.styl中搜索orange修改，没实测过。</p>
+<h4 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h4><p>next\source\css\_common\outline\sidebar\sidebar-toc.styl</p>
+<h3 id="搜索内关键词高亮"><a href="#搜索内关键词高亮" class="headerlink" title="搜索内关键词高亮"></a>搜索内关键词高亮</h3><p>\themes\next\source\css\_common\components\third-party\search.styl中修改</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">mark.search-keyword</span> &#123;</span><br><span class="line">  <span class="attr">background:</span> <span class="string">transparent;</span></span><br><span class="line">  <span class="attr">border-bottom:</span> <span class="string">1px</span> <span class="string">dashed</span> <span class="string">$mauve</span> <span class="string">;</span>  <span class="string">//</span> <span class="string">关键词下方点虚线颜色</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">$mauve</span> <span class="string">;</span> <span class="string">//</span> <span class="string">关键词颜色</span></span><br><span class="line">  <span class="attr">font-weight:</span> <span class="string">bold;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="分类页面中的优化"><a href="#分类页面中的优化" class="headerlink" title="分类页面中的优化"></a>分类页面中的优化</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">.category-list-count</span> &#123;  <span class="string">//</span> <span class="string">分类计数颜色</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">$mauve;</span></span><br><span class="line"></span><br><span class="line">  <span class="string">&amp;::before</span> &#123; <span class="string">//</span> <span class="string">计数左右的符号</span></span><br><span class="line">    <span class="attr">content:</span> <span class="string">&#x27; (&#x27;</span><span class="string">;</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="string">&amp;::after</span> &#123;</span><br><span class="line">    <span class="attr">content:</span> <span class="string">&#x27;) &#x27;</span><span class="string">;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="string">.category-list-child</span> &#123; <span class="string">//</span> <span class="string">子分类缩进</span></span><br><span class="line">  <span class="attr">padding-left:</span> <span class="string">20px;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -383,6 +371,25 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在vscode中配置java</title>
+    <url>/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/</url>
+    <content><![CDATA[<p>在vscode里配置jdk。</p>
+<span id="more"></span>
+
+<h2 id="jdk下载和配置"><a href="#jdk下载和配置" class="headerlink" title="jdk下载和配置"></a>jdk下载和配置</h2><p>jdk下载网站：<a href="https://www.oracle.com/java/technologies/downloads/#jdk21-windows">https://www.oracle.com/java/technologies/downloads/#jdk21-windows</a><br>注意要下windows版本，不要下错成其他版本了。。</p>
+<p>下面是经典的系统变量配置：<br>1.添加系统变量JAVA_HOME: D:\Program\jdk\jdk-21<br>2.在系统变量Path中新建添加：D:\Program\jdk\jdk-21\bin</p>
+<h2 id="vscode配置"><a href="#vscode配置" class="headerlink" title="vscode配置"></a>vscode配置</h2><h3 id="插件下载"><a href="#插件下载" class="headerlink" title="插件下载"></a>插件下载</h3><p>插件商店搜索并下载Extension Pack for Java<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/extension.png" alt="图片"></p>
+<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>在vscode设置中搜索java.home，并将java.home的路径设置为jdk目录<br><img src="/2024/03/01/%E5%9C%A8vscode%E4%B8%AD%E9%85%8D%E7%BD%AEjava/jdk.png" alt="图片"></p>
+<p>然后就ok了，随便试一下吧。</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -406,6 +413,20 @@
       </tags>
   </entry>
   <entry>
+    <title>基于SpringBoot+SpringCloud的尚硅谷Java项目《尚品甄选》</title>
+    <url>/2024/02/12/%E5%9F%BA%E4%BA%8ESpringBoot-SpringCloud%E7%9A%84%E5%B0%9A%E7%A1%85%E8%B0%B7Java%E9%A1%B9%E7%9B%AE%E3%80%8A%E5%B0%9A%E5%93%81%E7%94%84%E9%80%89%E3%80%8B/</url>
+    <content><![CDATA[<p>b站链接：<a href="https://www.bilibili.com/video/BV1NF411S7DS/">https://www.bilibili.com/video/BV1NF411S7DS/</a><br>跟随尚硅谷的Java项目实操学习。本文章记录学习笔记和开发过程中遇到的问题。</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>SpringBoot</tag>
+        <tag>SpringCloud</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>离散化</title>
     <url>/2023/09/05/%E7%A6%BB%E6%95%A3%E5%8C%96/</url>
     <content><![CDATA[<span id="more"></span>
@@ -417,8 +438,8 @@
         <category>基础算法</category>
       </categories>
       <tags>
-        <tag>acwing</tag>
         <tag>算法</tag>
+        <tag>acwing</tag>
         <tag>基础算法</tag>
       </tags>
   </entry>
